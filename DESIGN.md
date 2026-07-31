@@ -30,7 +30,7 @@ On navy #17324D: text #F7FAFC; secondary #C6D3DE.
 NO em-dashes anywhere (reads as AI); use commas, colons, periods. Titles use "|" as brand separator. No fake-presence claims ("online now"); availability statements must be truthful ("Thường phản hồi trong 1 giờ").
 
 ## Type
-- Display: **Bricolage Grotesque** 600/700/800 — h1/h2 + big prices only (scarcity = identity). VN subset verified.
+- Display: **Archivo** 700/800 — h1/h2 + big prices only (scarcity = identity). VN subset verified. (Bricolage Grotesque retired rev 3: too playful for the professional audience.)
 - Body/UI: **Be Vietnam Pro** 400/500/600/700.
 - Rules: heading line-height ≥1.22 (VN diacritics); `.06–.1em` top headroom on display sizes; NO uppercase on Vietnamese display text; `text-wrap: balance` headings; body measure ≤ 70ch; tracking never below -0.02em (diacritics).
 
