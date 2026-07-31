@@ -5,25 +5,25 @@ Committed visual world (2026-07-31, user-pinned "Chat-first" direction). This re
 ## World
 The site behaves like opening a message thread with a teacher-friend. The conversation is the interface: proof, levels, FAQ, and testimonials all speak in chat grammar (bubbles, replies, typing). Not an app mockup cosplay — a page that borrows messaging's warmth and immediacy.
 
-## Color — strategy: Committed teal, "Fresh & modern" skin (rev 2, owner rejected cream as "countryside")
-Deep pine-teal owns whole regions (hero + enquiry bands); crisp WHITE is the reading ground with cool mint-gray bands between; vivid rose appears ONLY on conversion controls. Never cream/earth tones (owner veto). Never navy. Secondary text on colored surfaces is hue-tinted, not gray.
+## Color — strategy: Committed navy, "Executive Navy + Burnt Orange" (rev 3; owner rejected cream="countryside" and mint/rose="student-y"; reference market = navy+warm accent)
+Deep navy owns whole regions (hero + enquiry bands); crisp WHITE reading ground with cool gray-blue bands; burnt orange appears ONLY on conversion controls (carries WHITE text, 4.74:1). Never cream/earth pastels or mint/rose (owner vetoes). Display font is Archivo 700/800 (Bricolage retired as too playful); body stays Be Vietnam Pro.
 
 ```
---ink        #171B21   cool near-black (text on light; dark panels/footer bg)
---cream      #FFFFFF   reading ground (var name legacy; value is white)
---cream-deep #F2F7F6   alternating cool band
---surface    #FFFFFF   cards, chat windows (1px #E3E9E8 border for crispness on white)
---teal-900   #0A3F3C   hero/enquiry band bg (deep pine)
---teal-700   #0B7A6B   links/accents on white
---teal-600   #0C7268   buttons w/ white text (AA)
---teal-100   #D7F0EA   tints, outgoing "learner" bubbles
---teal-050   #EAF4F1   quiet tint panels
---coral-500  #FF4D6D   PRIMARY CTA fill (vivid rose) — ALWAYS ink text (white fails AA)
---coral-600  #D6335A   hover; small rose text on white (AA)
---coral-100  #FFE4EA   tint rows
---zalo       #0068FF   Zalo buttons only, white text
---line       #E3E9E8   hairlines + card borders
-On teal-900: text #F2F7F5; secondary #B5D3CC.
+--ink        #172033   cool navy-black (text; dark panels/footer bg)
+--cream      #FFFFFF   reading ground (legacy var name)
+--cream-deep #F4F6F8   alternating band
+--surface    #FFFFFF   cards (1px #D9E1E8 border)
+--teal-900   #17324D   hero/enquiry band (executive navy)
+--teal-700   #244C6A   links on white
+--teal-600   #2B5D7B   secondary buttons w/ white text (7.1:1)
+--teal-100   #DDE8F0   learner bubbles / tints
+--teal-050   #EEF3F7   quiet panels
+--coral-500  #C9481D   PRIMARY CTA (burnt orange) - WHITE text (4.74:1)
+--coral-600  #A93817   hover; small orange text on white (6.4:1)
+--coral-100  #FBE7DE   tint rows
+--zalo       #0068FF   Zalo buttons only
+--line       #D9E1E8   hairlines/borders
+On navy #17324D: text #F7FAFC; secondary #C6D3DE.
 ```
 
 ## Copy style (owner-mandated)
