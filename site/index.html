@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<!-- Daily Chat with Chloe — PHIÊN BẢN TIẾNG VIỆT -->
+<!--
+DIRECTION CONTRACT
+THESIS: The site IS a conversation with Chloe - chat is the interface. Refuses the category default (feature-card grid under a stock hero).
+OWN-WORLD: Deep teal bands bookending a cream reading ground; white chat windows; teal-100 learner bubbles vs white Chloe bubbles with corner-cut tails; coral only on conversion; Bricolage Grotesque display + Be Vietnam Pro body. Recognizable with all content removed as a warm messaging thread.
+STORY: A 23–35 VN professional lands mid-conversation, sees themselves in the learner bubbles, believes "with her I'd actually speak," and messages Chloe on Zalo.
+FIRST VIEWPORT: Teal-900 band; left = kicker bubble, display H1, coral Zalo CTA; right = live chat window (avatar, online dot, 4 bubbles + typing).
+FORM: User-pinned "Chat-first" direction (beats the roll); staging = committed teal rendition, not cream-default.
+-->
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Chat with Chloe — Học tiếng Anh giao tiếp online 1 kèm 1 &amp; nhóm nhỏ</title>
-  <meta name="description" content="Học tiếng Anh giao tiếp online cùng cô Chloe: 1 kèm 1 từ 250.000đ/buổi, lớp nhóm tối đa 4 học viên, luyện phỏng vấn xin việc &amp; tiếp viên hàng không. Học thử miễn phí." />
+  <title>Daily Chat with Chloe | Học tiếng Anh giao tiếp online 1 kèm 1 và nhóm nhỏ</title>
+  <meta name="description" content="Học tiếng Anh giao tiếp online cùng Chloe: lớp 1 kèm 1 từ 250.000 đ/buổi, lớp nhóm tối đa 4 học viên và luyện phỏng vấn xin việc, kể cả tiếp viên hàng không. Đăng ký học thử miễn phí." />
   <!-- STAGING: prevent search indexing of the draft. Remove this line at launch. -->
   <meta name="robots" content="noindex, nofollow" />
   <!-- Update host at launch/custom domain. -->
@@ -13,8 +20,8 @@
   <link rel="alternate" hreflang="en" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/index.en" />
   <link rel="alternate" hreflang="x-default" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/" />
   <link rel="canonical" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/" />
-  <meta property="og:title" content="Daily Chat with Chloe — Học tiếng Anh giao tiếp online" />
-  <meta property="og:description" content="Lớp 1 kèm 1, nhóm tối đa 4 và luyện phỏng vấn cùng Chloe. Học thử miễn phí." />
+  <meta property="og:title" content="Daily Chat with Chloe | Học tiếng Anh giao tiếp online" />
+  <meta property="og:description" content="Lớp 1 kèm 1, lớp nhóm tối đa 4 học viên và khóa luyện phỏng vấn cùng Chloe. Đăng ký học thử miễn phí." />
   <meta property="og:type" content="website" /><meta property="og:locale" content="vi_VN" />
   <meta property="og:url" content="https://english-with-chloe.serenetravel-vietnam.workers.dev/" />
   <meta name="twitter:card" content="summary" />
@@ -22,63 +29,418 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"EducationalOrganization","@id":"https://english-with-chloe.serenetravel-vietnam.workers.dev/#organization","name":"Daily Chat with Chloe","url":"https://english-with-chloe.serenetravel-vietnam.workers.dev/"},
-    {"@type":"Course","name":"Tiếng Anh Giao tiếp Hằng ngày","provider":{"@id":"https://english-with-chloe.serenetravel-vietnam.workers.dev/#organization"}},
-    {"@type":"Course","name":"Tiếng Anh Công việc & Phỏng vấn","provider":{"@id":"https://english-with-chloe.serenetravel-vietnam.workers.dev/#organization"}},
+    {"@type":"Course","name":"Tiếng Anh giao tiếp hằng ngày","provider":{"@id":"https://english-with-chloe.serenetravel-vietnam.workers.dev/#organization"}},
+    {"@type":"Course","name":"Tiếng Anh cho công việc và phỏng vấn","provider":{"@id":"https://english-with-chloe.serenetravel-vietnam.workers.dev/#organization"}},
     {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"Học phí học tiếng Anh giao tiếp online là bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"1 kèm 1 từ 250.000đ/buổi (gói 10 buổi); lớp nhóm tối đa 4 học viên 5.500.000đ/khóa 30 buổi; luyện phỏng vấn từ 4.900.000đ tùy trình độ."}},
-      {"@type":"Question","name":"Có học thử miễn phí không?","acceptedAnswer":{"@type":"Answer","text":"Có — kiểm tra trình độ miễn phí + 1 buổi học thử miễn phí, không ràng buộc."}},
-      {"@type":"Question","name":"Lớp nhóm có bao nhiêu học viên?","acceptedAnswer":{"@type":"Answer","text":"Tối đa 4, để bạn được nói ở mọi buổi học."}},
-      {"@type":"Question","name":"Mình mất gốc tiếng Anh, học được không?","acceptedAnswer":{"@type":"Answer","text":"Được — Level 1 (A1) thiết kế cho người bắt đầu lại từ đầu, tập trung phát âm và các câu giao tiếp cơ bản."}},
-      {"@type":"Question","name":"Có luyện phỏng vấn xin việc bằng tiếng Anh không?","acceptedAnswer":{"@type":"Answer","text":"Có — 1 kèm 1, mọi ngành nghề, kể cả tiếp viên hàng không (Vietnam Airlines, Vietjet, Sun PhuQuoc Airways, Emirates, Qatar Airways, Cathay Pacific…)."}},
-      {"@type":"Question","name":"Học online qua nền tảng nào, lịch thế nào?","acceptedAnswer":{"@type":"Answer","text":"Zoom/Google Meet; buổi tối trong tuần và cuối tuần, lịch linh hoạt."}}
+      {"@type":"Question","name":"Học phí tiếng Anh giao tiếp online là bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Lớp 1 kèm 1 từ 250.000 đ/buổi (gói 10 buổi). Lớp nhóm tối đa 4 học viên: 5.500.000 đ/30 buổi. Khóa luyện phỏng vấn từ 4.900.000 đ, tùy trình độ hiện tại."}},
+      {"@type":"Question","name":"Có học thử miễn phí không?","acceptedAnswer":{"@type":"Answer","text":"Có. Bạn được kiểm tra trình độ và học thử 1 buổi hoàn toàn miễn phí."}},
+      {"@type":"Question","name":"Lớp nhóm có bao nhiêu học viên?","acceptedAnswer":{"@type":"Answer","text":"Tối đa 4 học viên, để mỗi bạn đều có nhiều thời gian luyện nói trong buổi học."}},
+      {"@type":"Question","name":"Mất gốc tiếng Anh thì có học được không?","acceptedAnswer":{"@type":"Answer","text":"Được. Trình độ 1 (A1) dành riêng cho người mất gốc: học lại từ phát âm và những mẫu câu giao tiếp thông dụng nhất."}},
+      {"@type":"Question","name":"Có luyện phỏng vấn xin việc bằng tiếng Anh không?","acceptedAnswer":{"@type":"Answer","text":"Có. Khóa học 1 kèm 1, điều chỉnh theo từng ngành nghề, kể cả phỏng vấn tiếp viên hàng không (Vietnam Airlines, Vietjet, Sun PhuQuoc Airways, Emirates, Qatar Airways, Cathay Pacific…)."}},
+      {"@type":"Question","name":"Học online qua nền tảng nào và lịch học ra sao?","acceptedAnswer":{"@type":"Answer","text":"Lớp học qua Zoom hoặc Google Meet, vào các buổi tối trong tuần và cuối tuần; lịch sắp xếp linh hoạt."}}
     ]}
   ]}
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <script>tailwind.config={theme:{extend:{colors:{navy:{900:'#0b1b33',800:'#12294c',700:'#1b3a68'},sky:{500:'#2f80ed',400:'#4f9cf9'},amber:{500:'#f2a71b',400:'#f6ba46'}},fontFamily:{sans:['"Plus Jakarta Sans"','system-ui','sans-serif']}}}}</script>
-  <style>html{scroll-behavior:smooth}.draft{outline:1px dashed rgba(242,167,27,.5)}</style>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body class="font-sans text-navy-900 bg-white antialiased">
-<header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-100"><nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-  <a href="#top" class="flex items-center gap-2 font-extrabold text-lg"><span class="inline-grid place-items-center w-8 h-8 rounded-lg bg-navy-800 text-white">D</span><span>Daily Chat <span class="text-sky-500">with Chloe</span></span></a>
-  <div class="hidden md:flex items-center gap-5 text-sm font-medium text-slate-600"><a href="#courses">Khóa học</a><a href="#levels">Trình độ</a><a href="#why">Vì sao chọn mình</a><a href="#testimonials">Cảm nhận</a><a href="#pricing">Học phí</a></div>
-  <div class="flex items-center gap-3"><a href="index.en.html" class="text-xs font-semibold text-slate-400">EN</a><span class="text-slate-300 text-xs">|</span><a href="index.html" class="text-xs font-semibold">VI</a><a href="REPLACE_ZALO" class="draft rounded-full bg-amber-500 font-semibold text-sm px-4 py-2">Nhắn Zalo</a></div>
-</nav></header>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Daily Chat with Chloe - về đầu trang">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 4h20a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H14l-6 6v-6H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Z" fill="#107C74"/><text x="16" y="17.5" text-anchor="middle" dominant-baseline="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="13" fill="#fff">C</text></svg>
+      <span>Daily Chat <em>with Chloe</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="#courses">Khóa học</a>
+      <a href="#levels">Trình độ</a>
+      <a href="#why">Vì sao chọn Chloe</a>
+      <a href="#testimonials">Cảm nhận</a>
+      <a href="#pricing">Học phí</a>
+    </nav>
+    <div class="head-actions">
+      <span class="lang"><a href="index.en.html">EN</a><a href="index.html" class="on" aria-current="true">VI</a></span>
+      <a href="REPLACE_ZALO" class="btn btn--primary head-cta draft">Nhắn Zalo</a>
+    </div>
+  </div>
+</header>
+
 <main id="top">
-<section class="relative overflow-hidden bg-navy-900 text-white"><div class="absolute inset-0 opacity-20 bg-[radial-gradient(60%_60%_at_70%_10%,#4f9cf9_0%,transparent_60%)]"></div><div class="relative max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center"><div>
-  <span class="inline-block rounded-full bg-white/10 border border-white/15 text-amber-400 text-xs font-semibold px-3 py-1 mb-5">Tiếng Anh giao tiếp online · 1 kèm 1 &amp; nhóm nhỏ</span>
-  <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Tự tin nói tiếng Anh — bắt đầu từ những cuộc trò chuyện thật mỗi ngày.</h1>
-  <p class="mt-5 text-lg text-slate-300">Luyện nói thật cùng cô giáo hiểu hành trình của bạn. Lớp nhỏ tối đa 4 học viên, lộ trình rõ ràng từ buổi đầu — không học theo kịch bản máy móc.</p>
-  <div class="mt-8 flex flex-wrap gap-3"><a href="#enquiry" class="rounded-full bg-amber-500 text-navy-900 font-bold px-6 py-3">Đăng ký học thử miễn phí</a><a href="#courses" class="rounded-full border border-white/25 font-semibold px-6 py-3">Xem khóa học</a></div>
-  <p class="mt-4 text-sm text-slate-400">Kiểm tra trình độ miễn phí · Học thử miễn phí · Phản hồi trong vòng 1 giờ qua Zalo</p>
-</div><div class="draft aspect-[4/5] w-full max-w-sm mx-auto rounded-2xl bg-gradient-to-br from-navy-700 to-sky-500 grid place-items-center text-center p-6"><span class="text-white/80 text-sm">[REPLACE_PHOTO]<br>Ảnh cô Chloe</span></div></div></section>
-<section class="bg-slate-50 border-y border-slate-100"><div class="max-w-6xl mx-auto px-5 py-8 grid sm:grid-cols-3 gap-6 text-center">
-  <div><p class="text-2xl font-extrabold">Trình độ bản ngữ</p><p class="text-sm text-slate-500">Từng sống ở Thụy Sĩ · tiếng Anh tự nhiên, trôi chảy</p></div><div><p class="text-2xl font-extrabold">Tối đa 4 học viên</p><p class="text-sm text-slate-500">Bạn được nói ở mọi buổi học</p></div><div><p class="text-2xl font-extrabold">Học thử miễn phí</p><p class="text-sm text-slate-500">Kiểm tra trình độ + 1 buổi học thử, không ràng buộc</p></div>
-</div></section>
-<section id="courses" class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Khóa học</h2><div class="mt-10 grid md:grid-cols-2 gap-6">
-  <article class="rounded-2xl border border-slate-200 p-7"><h3 class="text-xl font-bold">Tiếng Anh Giao tiếp Hằng ngày</h3><p class="mt-3 text-slate-600">Luyện những cuộc trò chuyện thật về cuộc sống, du lịch và small talk trong công việc, với lộ trình cá nhân hóa theo mục tiêu của bạn.</p><p class="mt-5 font-bold">1 kèm 1 từ 250.000đ/buổi · Nhóm tối đa 4: 5.500.000đ/khóa 30 buổi</p></article>
-  <article class="rounded-2xl border border-slate-200 p-7"><p class="text-xs font-semibold text-sky-500">Work-Ready English</p><h3 class="mt-1 text-xl font-bold">Tiếng Anh Công việc &amp; Phỏng vấn</h3><p class="mt-3 text-slate-600">Tiếng Anh công sở cho họp, email, small talk với đồng nghiệp nước ngoài, cùng luyện phỏng vấn cho mọi ngành nghề — bao gồm tiếp viên hàng không như một lựa chọn. Luyện phỏng vấn chỉ học 1 kèm 1.</p><p class="mt-5 font-bold">Từ 4.900.000đ — tùy trình độ, liên hệ để được tư vấn</p></article>
-</div></section>
-<section id="work" class="bg-slate-50 border-y border-slate-100"><div class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Tiếng Anh Công việc &amp; Phỏng vấn</h2><p class="mt-4 text-slate-600 max-w-2xl">Chuẩn bị cho những buổi phỏng vấn thật và môi trường làm việc thật, với nội dung sát ngành nghề và mục tiêu của bạn.</p><div class="mt-10 grid md:grid-cols-3 gap-5">
-  <div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Ngân hàng câu hỏi phỏng vấn</h3><p class="mt-1 text-sm text-slate-600">Câu hỏi thật theo ngành &amp; vị trí, kèm gợi ý trả lời.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Phỏng vấn thử 1 kèm 1</h3><p class="mt-1 text-sm text-slate-600">Mô phỏng như thật, sửa chi tiết từng câu trả lời.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Phát âm &amp; phong thái chuyên nghiệp</h3><p class="mt-1 text-sm text-slate-600">Nói rõ ràng, tự tin, chuyên nghiệp.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Tiếng Anh công sở</h3><p class="mt-1 text-sm text-slate-600">Họp, email, small talk với đồng nghiệp nước ngoài.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Chuyên sâu hàng không (tùy chọn)</h3><p class="mt-1 text-sm text-slate-600">Luyện theo format tuyển dụng Vietnam Airlines, Vietjet, Sun PhuQuoc Airways, Emirates, Qatar Airways, Cathay Pacific…</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Xử lý câu hỏi bất ngờ</h3><p class="mt-1 text-sm text-slate-600">Bình tĩnh trước câu hỏi “lắt léo”.</p></div>
-  </div><p class="mt-6 font-semibold">Học viên gần đây nhất: đậu phỏng vấn tiếp viên hàng không ngay lần đầu tiên.</p><div class="mt-8 rounded-2xl bg-navy-900 text-white p-7"><p class="font-bold text-amber-400">Cam kết sẵn sàng phỏng vấn</p><p class="mt-1 text-slate-300 text-sm">Nếu đến ngày phỏng vấn bạn chưa thấy sẵn sàng, mình sẽ tiếp tục đồng hành miễn phí cho đến khi bạn sẵn sàng.</p></div><p class="mt-3 text-sm text-slate-500">Từ 4.900.000đ — tùy trình độ hiện tại. Nhắn Zalo để được tư vấn lộ trình.</p></div></section>
-<section id="levels" class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Trình độ</h2><div class="mt-10 grid md:grid-cols-3 gap-5">
-  <article class="rounded-xl border p-6"><h3 class="font-bold">Level 1 (A1) — Nền tảng</h3><p class="mt-2 text-sm text-slate-600">Phát âm chuẩn từ đầu; chào hỏi, giới thiệu bản thân; hội thoại ngắn hằng ngày.</p><p class="mt-3 text-sm"><strong>Mục tiêu:</strong> tự tin mở lời, nói câu đơn giản không sợ sai.</p></article><article class="rounded-xl border p-6"><h3 class="font-bold">Level 2 (A2) — Mở rộng</h3><p class="mt-2 text-sm text-slate-600">Tình huống hằng ngày (mua sắm, đặt lịch, hỏi đường, gọi món); small talk; kể về công việc &amp; sở thích.</p><p class="mt-3 text-sm"><strong>Mục tiêu:</strong> trò chuyện 5–10 phút tự nhiên.</p></article><article class="rounded-xl border p-6"><h3 class="font-bold">Level 3 (A2+–B1) — Tự tin</h3><p class="mt-2 text-sm text-slate-600">Nêu &amp; bảo vệ ý kiến; kể chuyện; hội thoại trong công việc; diễn đạt tự nhiên hơn.</p><p class="mt-3 text-sm"><strong>Mục tiêu:</strong> giao tiếp thoải mái ngoài đời và trong môi trường làm việc.</p></article>
-  </div><p class="mt-6 text-sm">Chưa biết mình ở level nào? Kiểm tra trình độ miễn phí — mình xếp lớp giúp bạn.</p></section>
-<section id="why" class="bg-slate-50 border-y"><div class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Vì sao học cùng Chloe?</h2><div class="mt-10 grid md:grid-cols-3 gap-5">
-  <div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Hội thoại thật, không giáo trình khô cứng</h3><p class="text-sm text-slate-600 mt-1">Học qua tình huống bạn thật sự gặp.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Lộ trình cá nhân hóa</h3><p class="text-sm text-slate-600 mt-1">Theo đúng mục tiêu và tốc độ của bạn.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Giáo viên giàu kinh nghiệm, trình độ bản ngữ</h3><p class="text-sm text-slate-600 mt-1">Từng sống ở Thụy Sĩ.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Lớp siêu nhỏ, tối đa 4 học viên</h3><p class="text-sm text-slate-600 mt-1">Bạn luôn được nói.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Lịch học linh hoạt</h3><p class="text-sm text-slate-600 mt-1">Buổi tối &amp; cuối tuần.</p></div><div class="rounded-xl bg-white border p-5"><h3 class="font-bold">Học phí linh hoạt</h3><p class="text-sm text-slate-600 mt-1">Gói nhỏ, có thể chia 2 đợt.</p></div>
-</div></div></section>
-<section id="how" class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Cách thức học</h2><div class="mt-10 grid md:grid-cols-4 gap-6"><div><b>1. Kiểm tra trình độ miễn phí</b><p class="text-sm text-slate-600">Xác định điểm xuất phát của bạn.</p></div><div><b>2. Học thử miễn phí</b><p class="text-sm text-slate-600">Cảm nhận việc được nói thực sự.</p></div><div><b>3. Tư vấn qua Zalo</b><p class="text-sm text-slate-600">Lộ trình cá nhân cho mục tiêu của bạn.</p></div><div><b>4. Bắt đầu</b><p class="text-sm text-slate-600">1 kèm 1, lớp nhóm, hoặc luyện phỏng vấn.</p></div></div></section>
-<section id="about" class="bg-navy-900 text-white"><div class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center"><div class="draft aspect-square max-w-sm rounded-2xl bg-gradient-to-br from-sky-500 to-navy-700 grid place-items-center"><span>[REPLACE_PHOTO]<br>Ảnh cô Chloe</span></div><div><h2 class="text-3xl md:text-4xl font-extrabold">Chào bạn, mình là Chloe.</h2><p class="mt-4 text-slate-300">Chào bạn, mình là Chloe. Mình từng sống ở Thụy Sĩ và nói tiếng Anh ở trình độ bản ngữ. Mình tin bạn học nói nhanh nhất qua những cuộc trò chuyện thật — về cuộc sống, công việc và mục tiêu của chính bạn — chứ không phải qua kịch bản máy móc. Lớp của mình luôn nhỏ (tối đa 4 học viên) để bạn thực sự được nói, và bạn luôn có lộ trình rõ ràng ngay từ buổi đầu tiên.</p></div></div></section>
-<!-- Real quotes + photos arriving by email. -->
-<section id="testimonials" class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Học viên nói gì? 💬</h2><div class="mt-10 grid md:grid-cols-3 gap-5"><article class="draft rounded-xl border p-6"><p>“[REPLACE_TESTIMONIAL_1]”</p><p class="mt-4 text-sm text-slate-500">[Tên học viên — mục tiêu]</p></article><article class="draft rounded-xl border p-6"><p>“[REPLACE_TESTIMONIAL_2]”</p><p class="mt-4 text-sm text-slate-500">[Tên học viên — mục tiêu]</p></article><article class="draft rounded-xl border p-6"><p>“[REPLACE_TESTIMONIAL_3]”</p><p class="mt-4 text-sm text-slate-500">[Tên học viên — mục tiêu]</p></article></div></section>
-<section id="pricing" class="bg-slate-50 border-y"><div class="max-w-6xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Học phí minh bạch</h2><div class="mt-10 grid md:grid-cols-3 gap-5"><article class="rounded-xl bg-white border p-6"><h3 class="font-bold">1 kèm 1 (60 phút)</h3><p class="mt-3 text-2xl font-extrabold">từ 250.000đ/buổi</p><p class="mt-2 text-sm text-slate-600">Học theo gói 10 buổi, lộ trình riêng.</p></article><article class="rounded-xl bg-white border p-6"><h3 class="font-bold">Nhóm tối đa 4 (90 phút)</h3><p class="mt-3 text-2xl font-extrabold">5.500.000đ/khóa 30 buổi</p><p class="mt-2 text-sm text-slate-600">Đóng trọn gói hoặc chia 2 đợt. Không áp dụng cho luyện phỏng vấn.</p></article><article class="rounded-xl bg-white border p-6"><h3 class="font-bold">Luyện phỏng vấn (1 kèm 1)</h3><p class="mt-3 text-2xl font-extrabold">từ 4.900.000đ</p><p class="mt-2 text-sm text-slate-600">Tùy trình độ; nhắn Zalo để được tư vấn.</p></article></div><div class="mt-6 grid md:grid-cols-2 gap-5"><div class="rounded-xl bg-white border p-5"><b>Lớp Sáng lập</b><p class="text-sm text-slate-600">Giảm ~30%, một lần.</p></div><div class="rounded-xl bg-white border p-5"><b>Cam kết tự tin</b><p class="text-sm text-slate-600">Hoàn phí các buổi chưa học.</p></div></div><div class="mt-10 rounded-2xl bg-white border p-7"><h3 class="font-bold text-lg">Lịch học lớp nhóm</h3><div class="mt-4 grid sm:grid-cols-2 gap-4 text-sm"><p><b>Ca 1:</b> Thứ 3 &amp; 5 · 20:00–21:30</p><p><b>Ca 2:</b> Thứ 7 &amp; CN · 9:30–11:00</p></div><p class="mt-4 text-sm text-amber-600 font-semibold">Nhóm tiếp theo đang tuyển — đăng ký giữ chỗ ngay hôm nay.</p></div></div></section>
-<section id="faq" class="max-w-4xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Câu hỏi thường gặp</h2><div class="mt-8 space-y-3">
-  <details class="border rounded-xl p-5"><summary class="font-semibold">Học phí học tiếng Anh giao tiếp online là bao nhiêu?</summary><p class="mt-3 text-slate-600">1 kèm 1 từ 250.000đ/buổi (gói 10 buổi); lớp nhóm tối đa 4 học viên 5.500.000đ/khóa 30 buổi; luyện phỏng vấn từ 4.900.000đ tùy trình độ.</p></details><details class="border rounded-xl p-5"><summary class="font-semibold">Có học thử miễn phí không?</summary><p class="mt-3 text-slate-600">Có — kiểm tra trình độ miễn phí + 1 buổi học thử miễn phí, không ràng buộc.</p></details><details class="border rounded-xl p-5"><summary class="font-semibold">Lớp nhóm có bao nhiêu học viên?</summary><p class="mt-3 text-slate-600">Tối đa 4, để bạn được nói ở mọi buổi học.</p></details><details class="border rounded-xl p-5"><summary class="font-semibold">Mình mất gốc tiếng Anh, học được không?</summary><p class="mt-3 text-slate-600">Được — Level 1 (A1) thiết kế cho người bắt đầu lại từ đầu, tập trung phát âm và các câu giao tiếp cơ bản.</p></details><details class="border rounded-xl p-5"><summary class="font-semibold">Có luyện phỏng vấn xin việc bằng tiếng Anh không?</summary><p class="mt-3 text-slate-600">Có — 1 kèm 1, mọi ngành nghề, kể cả tiếp viên hàng không (Vietnam Airlines, Vietjet, Sun PhuQuoc Airways, Emirates, Qatar Airways, Cathay Pacific…).</p></details><details class="border rounded-xl p-5"><summary class="font-semibold">Học online qua nền tảng nào, lịch thế nào?</summary><p class="mt-3 text-slate-600">Zoom/Google Meet; buổi tối trong tuần và cuối tuần, lịch linh hoạt.</p></details>
-</div></section>
-<section id="enquiry" class="bg-navy-900 text-white"><div class="max-w-3xl mx-auto px-5 py-20"><h2 class="text-3xl md:text-4xl font-extrabold">Đăng ký học thử miễn phí</h2><form action="REPLACE_FORMSPREE" method="POST" class="draft mt-8 grid gap-4"><div class="grid sm:grid-cols-2 gap-4"><input required name="name" placeholder="Họ và tên" class="rounded-lg border border-slate-300 px-4 py-3 text-navy-900"><input required name="contact" placeholder="Số điện thoại / Zalo" class="rounded-lg border border-slate-300 px-4 py-3 text-navy-900"></div><select name="goal" class="rounded-lg border border-slate-300 px-4 py-3 text-slate-700"><option value="">Mục tiêu của bạn là gì?</option><option>Tiếng Anh giao tiếp hằng ngày</option><option>Tiếng Anh cho công việc</option><option>Phỏng vấn xin việc</option><option>Phỏng vấn tiếp viên hàng không</option><option>Khác</option></select><select name="format" class="rounded-lg border border-slate-300 px-4 py-3 text-slate-700"><option value="">Hình thức mong muốn</option><option>Học 1 kèm 1</option><option>Lớp nhóm (tối đa 4 — không áp dụng luyện phỏng vấn)</option><option>Chưa chắc chắn</option></select><textarea name="message" rows="3" placeholder="Bạn muốn mình biết thêm điều gì? (VD: ngày phỏng vấn, mục tiêu cụ thể)" class="rounded-lg border border-slate-300 px-4 py-3 text-navy-900"></textarea><button class="rounded-full bg-amber-500 hover:bg-amber-400 text-navy-900 font-bold px-6 py-3">Gửi đăng ký &amp; học thử miễn phí</button><p class="text-xs text-slate-400 text-center">Hoặc nhắn trực tiếp cho mình qua <a href="REPLACE_ZALO" class="underline">Zalo</a>.</p></form><p class="mt-5 text-sm">Hoặc <a class="draft text-amber-400" href="REPLACE_ZALO">nhắn Zalo trực tiếp</a>.</p></div></section>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero band-teal">
+    <div class="wrap">
+      <div>
+        <span class="kicker">Tiếng Anh giao tiếp online · 1 kèm 1 và nhóm tối đa 4</span>
+        <h1>Tự tin nói tiếng Anh qua những cuộc trò chuyện thực tế mỗi ngày</h1>
+        <p class="lead">Luyện nói cùng mình qua những tình huống bạn thực sự gặp. Mình luôn <b>đồng hành sát sao</b> với bạn. Lớp chỉ tối đa 4 học viên, lộ trình rõ ràng ngay từ buổi đầu, <b>không rập khuôn, không học vẹt</b>.</p>
+        <div class="hero-ctas">
+          <a href="REPLACE_ZALO" class="btn btn--primary btn--lg draft">Nhắn Zalo để học thử miễn phí</a>
+          <a href="#courses" class="btn btn--ghost">Xem khóa học</a>
+        </div>
+        <p class="hero-note">Kiểm tra trình độ miễn phí · Học thử miễn phí · Mình phản hồi qua Zalo trong 1 giờ</p>
+      </div>
+      <div class="hero-chat">
+        <div class="chat-card">
+          <div class="chat-card__head">
+            <span class="avatar draft" title="[REPLACE_PHOTO] - thay bằng ảnh Chloe">C</span>
+            <div>
+              <p class="chat-card__name">Chloe</p>
+              <p class="chat-card__status">Thường phản hồi trong 1 giờ</p>
+            </div>
+          </div>
+          <div class="chat-card__body thread">
+            <span class="bubble bubble--out from-me">Chị ơi, em muốn nói tiếng Anh tự tin hơn 😅</span>
+            <span class="bubble bubble--in from-them">Được nè! Mình trò chuyện thử nhé, when can you talk?</span>
+            <span class="bubble bubble--out from-me">Tối nay được không ạ?</span>
+            <span class="bubble bubble--in from-them">Perfect! Hẹn bạn 8 giờ tối 👋</span>
+            <span class="bubble bubble--in from-them typing" aria-label="Chloe đang soạn tin"><i></i><i></i><i></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust band-deep" aria-label="Vì sao tin tưởng">
+    <div class="wrap">
+      <div class="trust-item"><b>Tiếng Anh như người bản xứ</b><span>Từng sống và làm việc tại Thụy Sĩ</span></div>
+      <div class="trust-item"><b>Tối đa 4 học viên</b><span>Bạn có nhiều thời gian luyện nói ở mọi buổi</span></div>
+      <div class="trust-item"><b>Học thử miễn phí</b><span>Kiểm tra trình độ và học thử 1 buổi, hoàn toàn miễn phí</span></div>
+    </div>
+  </section>
+
+  <!-- ============ COURSES ============ -->
+  <section id="courses">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Khóa học</span>
+        <h2>Hai lộ trình, một mục tiêu: bạn nói được</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="course course--daily">
+          <span class="chip chip--teal">1 kèm 1 · nhóm tối đa 4</span>
+          <h3>Tiếng Anh giao tiếp hằng ngày</h3>
+          <p>Luyện nói qua những tình huống thực tế: cuộc sống hằng ngày, đi du lịch, trò chuyện xã giao nơi công sở, với lộ trình riêng theo mục tiêu của bạn.</p>
+          <div class="course-foot"><span class="price-bubble">1 kèm 1 từ 250.000 đ/buổi · Nhóm: 5.500.000 đ/khóa</span></div>
+        </article>
+        <article class="course course--work">
+          <span class="chip">Work-Ready English</span>
+          <h3>Tiếng Anh cho công việc và phỏng vấn</h3>
+          <p>Tiếng Anh để họp, viết email và trò chuyện với đồng nghiệp quốc tế; luyện phỏng vấn xin việc cho nhiều ngành nghề, kể cả thi tuyển tiếp viên hàng không. Riêng luyện phỏng vấn chỉ dạy 1 kèm 1.</p>
+          <div class="course-foot"><span class="price-bubble">Từ 4.900.000 đ, tùy trình độ</span><a href="#work" class="course-link">Xem chi tiết ↓</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK & INTERVIEWS ============ -->
+  <section id="work" class="band-deep">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Khóa chuyên sâu</span>
+        <h2>Tiếng Anh cho công việc và phỏng vấn</h2>
+        <p class="muted">Chuẩn bị kỹ cho buổi phỏng vấn và công việc thực tế, với nội dung bám sát ngành nghề, vị trí và mục tiêu của bạn.</p>
+      </div>
+      <div class="checklist">
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#DDEEE9"/><path d="M7 12.5l3.2 3L17 9" stroke="#0F6B63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Bộ câu hỏi phỏng vấn theo từng vị trí</b><span>Câu hỏi thường gặp theo ngành và vị trí, kèm hướng dẫn trả lời.</span></div></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#DDEEE9"/><path d="M7 12.5l3.2 3L17 9" stroke="#0F6B63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Phỏng vấn thử 1 kèm 1</b><span>Thực hành như buổi phỏng vấn thật; mình góp ý chi tiết từng câu trả lời.</span></div></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#DDEEE9"/><path d="M7 12.5l3.2 3L17 9" stroke="#0F6B63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Phát âm và phong thái chuyên nghiệp</b><span>Diễn đạt rõ ràng, tự tin và tạo thiện cảm.</span></div></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#DDEEE9"/><path d="M7 12.5l3.2 3L17 9" stroke="#0F6B63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Tiếng Anh công sở</b><span>Luyện họp, viết email và trò chuyện với đồng nghiệp quốc tế.</span></div></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#DDEEE9"/><path d="M7 12.5l3.2 3L17 9" stroke="#0F6B63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Luyện thi tiếp viên hàng không</b><span>Luyện theo đúng quy trình tuyển dụng của từng hãng.</span>
+          <span class="airlines"><i>Vietnam Airlines</i><i>Vietjet</i><i>Sun PhuQuoc Airways</i><i>Emirates</i><i>Qatar Airways</i><i>Cathay Pacific</i></span></div></div>
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#DDEEE9"/><path d="M7 12.5l3.2 3L17 9" stroke="#0F6B63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Xử lý câu hỏi bất ngờ</b><span>Giữ bình tĩnh trước những câu hỏi lắt léo.</span></div></div>
+      </div>
+      <div class="proof-chat thread">
+        <span class="bubble bubble--out from-me">Chị ơi, em ĐẬU rồi!!! 🎉</span>
+        <span class="bubble bubble--in from-them">I knew you could do it! 🥹</span>
+        <p class="bubble-meta">Một học viên của mình đã đậu phỏng vấn tiếp viên hàng không ngay lần thi đầu.</p>
+      </div>
+      <div class="guarantee band-ink">
+        <h3>Đồng hành đến khi bạn tự tin đi phỏng vấn</h3>
+        <p>Nếu gần đến ngày phỏng vấn mà bạn vẫn chưa tự tin, mình sẽ tiếp tục kèm miễn phí để bạn chuẩn bị tốt nhất.</p>
+      </div>
+      <p class="small muted" style="margin-top:1rem">Học phí từ 4.900.000 đ, tùy trình độ hiện tại. <a href="REPLACE_ZALO" class="draft">Nhắn mình qua Zalo để được tư vấn lộ trình</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ LEVELS ============ -->
+  <section id="levels">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Lộ trình</span>
+        <h2>Ba trình độ: bạn bắt đầu đúng chỗ của mình</h2>
+      </div>
+      <div class="rail">
+        <div class="rail-item">
+          <span class="rail-badge">A1</span>
+          <h3>Trình độ 1 (A1): Nền tảng</h3>
+          <p>Xây nền tảng phát âm; chào hỏi, giới thiệu bản thân; trò chuyện ngắn hằng ngày. Mục tiêu: tự tin bắt chuyện và nói những câu đơn giản mà không sợ sai.</p>
+          <div class="rail-goal"><span class="bubble">“Hi! I’m Linh. Nice to meet you!”</span><span>Câu bạn sẽ tự tin nói được</span></div>
+        </div>
+        <div class="rail-item">
+          <span class="rail-badge">A2</span>
+          <h3>Trình độ 2 (A2): Mở rộng</h3>
+          <p>Các tình huống hằng ngày như mua sắm, đặt lịch, hỏi đường, gọi món; trò chuyện xã giao; chia sẻ về công việc và sở thích. Mục tiêu: duy trì cuộc trò chuyện tự nhiên trong 5–10 phút.</p>
+          <div class="rail-goal"><span class="bubble">“I love my job, but weekends are for coffee with friends.”</span><span>Câu bạn sẽ tự tin nói được</span></div>
+        </div>
+        <div class="rail-item">
+          <span class="rail-badge">B1</span>
+          <h3>Trình độ 3 (A2+ đến B1): Tự tin</h3>
+          <p>Nêu và bảo vệ ý kiến; kể chuyện; giao tiếp trong công việc; diễn đạt tự nhiên hơn. Mục tiêu: giao tiếp thoải mái trong cuộc sống hằng ngày và tại nơi làm việc.</p>
+          <div class="rail-goal"><span class="bubble">“In my opinion, we should try a different approach.”</span><span>Câu bạn sẽ tự tin nói được</span></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:2rem">Chưa biết trình độ nào phù hợp với bạn? <a href="#enquiry">Làm bài kiểm tra miễn phí</a>, mình sẽ xếp lớp phù hợp cho bạn.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section id="why" class="band-deep">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Điểm khác biệt</span>
+        <h2>Vì sao học cùng Chloe?</h2>
+      </div>
+      <div class="wall">
+        <div class="bubble from-them"><b>Trò chuyện thực tế, không giáo trình khô cứng</b><span>Học qua những tình huống bạn thực sự gặp hằng ngày.</span></div>
+        <div class="bubble from-me"><b>Lộ trình dành riêng cho bạn</b><span>Nội dung và tiến độ bám sát mục tiêu của bạn.</span></div>
+        <div class="bubble from-them"><b>Giáo viên giàu kinh nghiệm, phát âm chuẩn bản xứ</b><span>Từng sống và làm việc tại Thụy Sĩ.</span></div>
+        <div class="bubble from-me"><b>Lớp chỉ tối đa 4 học viên</b><span>Bạn có nhiều thời gian luyện nói trong mỗi buổi học.</span></div>
+        <div class="bubble from-them"><b>Lịch học linh hoạt</b><span>Có lớp buổi tối và cuối tuần.</span></div>
+        <div class="bubble from-me"><b>Thanh toán linh hoạt</b><span>Chọn gói phù hợp, có thể chia 2 đợt.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW ============ -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">4 bước đơn giản</span>
+        <h2>Bắt đầu như thế nào?</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><b>Kiểm tra trình độ miễn phí</b><p>Xác định trình độ hiện tại của bạn.</p></div>
+        <div class="step"><b>Học thử miễn phí</b><p>Trải nghiệm một buổi học thật, bạn nói là chính.</p></div>
+        <div class="step"><b>Nhận tư vấn qua Zalo</b><p>Mình đề xuất lộ trình phù hợp với mục tiêu của bạn.</p></div>
+        <div class="step"><b>Bắt đầu học</b><p>Chọn 1 kèm 1, lớp nhóm hoặc luyện phỏng vấn.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about band-deep">
+    <div class="wrap">
+      <div class="blob draft">[REPLACE_PHOTO]<br>Ảnh Chloe</div>
+      <div>
+        <span class="kicker">Về Chloe</span>
+        <h2>Chào bạn, mình là Chloe</h2>
+        <div class="about-quote thread"><span class="bubble bubble--in from-them">Bạn học nói nhanh nhất qua những cuộc trò chuyện thật. 💬</span></div>
+        <p class="body">Mình từng sống và làm việc ở Thụy Sĩ, dùng tiếng Anh mỗi ngày như tiếng mẹ đẻ. Theo mình, cách nhanh nhất để nói tốt hơn là trò chuyện về những điều gần gũi với cuộc sống, công việc và mục tiêu của chính bạn, thay vì học thuộc những đoạn hội thoại rập khuôn. Vì vậy mỗi lớp chỉ có tối đa 4 học viên, để ai cũng có nhiều thời gian luyện nói và theo một lộ trình rõ ràng ngay từ buổi đầu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real quotes + photos arriving by email. -->
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Cảm nhận</span>
+        <h2>Học viên nói gì?</h2>
+      </div>
+      <div class="tcards">
+        <article class="tcard draft">
+          <span class="bubble bubble--in">“[REPLACE_TESTIMONIAL_1]”</span>
+          <p class="bubble-meta">[Tên học viên · mục tiêu học]</p>
+          <div class="reply"><span class="bubble">Tự hào về bạn lắm! 💪</span><span class="avatar">C</span></div>
+        </article>
+        <article class="tcard draft">
+          <span class="bubble bubble--in">“[REPLACE_TESTIMONIAL_2]”</span>
+          <p class="bubble-meta">[Tên học viên · mục tiêu học]</p>
+          <div class="reply"><span class="bubble">Cố lên nhé, sắp tới đích rồi! 🔥</span><span class="avatar">C</span></div>
+        </article>
+        <article class="tcard draft">
+          <span class="bubble bubble--in">“[REPLACE_TESTIMONIAL_3]”</span>
+          <p class="bubble-meta">[Tên học viên · mục tiêu học]</p>
+          <div class="reply"><span class="bubble">So proud of you! 🥹</span><span class="avatar">C</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="band-deep">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Học phí</span>
+        <h2>Học phí rõ ràng</h2>
+      </div>
+      <div class="prices">
+        <article class="price-card">
+          <h3>1 kèm 1 (60 phút)</h3>
+          <p class="amount">Từ 250.000 đ<small>/buổi · gói 10 buổi, lộ trình riêng</small></p>
+          <ul>
+            <li>Lộ trình riêng theo mục tiêu</li>
+            <li>Lịch linh hoạt tối &amp; cuối tuần</li>
+            <li>Nhận xét chi tiết sau mỗi buổi</li>
+          </ul>
+          <a href="#enquiry" class="btn btn--teal" data-goal="Tiếng Anh giao tiếp hằng ngày">Học thử miễn phí</a>
+        </article>
+        <article class="price-card price-card--hot">
+          <span class="chip">Phổ biến nhất</span>
+          <h3>Nhóm tối đa 4 học viên (90 phút)</h3>
+          <p class="amount">5.500.000 đ<small>/30 buổi · ≈183.000 đ mỗi buổi</small></p>
+          <ul>
+            <li>Tối đa 4 học viên, luôn được luyện nói</li>
+            <li>Thanh toán một lần hoặc chia 2 đợt</li>
+            <li>Luyện phỏng vấn chỉ có lớp 1 kèm 1</li>
+          </ul>
+          <a href="#enquiry" class="btn btn--primary" data-goal="Tiếng Anh giao tiếp hằng ngày">Giữ chỗ nhóm mới</a>
+        </article>
+        <article class="price-card">
+          <h3>Luyện phỏng vấn (1 kèm 1)</h3>
+          <p class="amount">Từ 4.900.000 đ<small>tùy trình độ · tư vấn qua Zalo</small></p>
+          <ul>
+            <li>Theo từng ngành nghề, kể cả hàng không</li>
+            <li>Phỏng vấn thử + sửa từng câu</li>
+            <li>Đồng hành đến khi bạn tự tin</li>
+          </ul>
+          <a href="#enquiry" class="btn btn--teal" data-goal="Phỏng vấn xin việc">Tư vấn lộ trình</a>
+        </article>
+      </div>
+      <div class="offer-rows">
+        <p class="offer offer--coral"><b>Ưu đãi khóa đầu tiên:</b> giảm 30% học phí cho nhóm khai giảng đầu tiên, chỉ một lần duy nhất.</p>
+        <p class="offer offer--teal"><b>Cam kết hoàn học phí:</b> không hài lòng sau gói đầu tiên? Mình hoàn 100% học phí những buổi bạn chưa học.</p>
+      </div>
+      <div class="schedule">
+        <h3>Lịch học lớp nhóm</h3>
+        <div class="slots">
+          <p class="slot"><b>Ca 1: Thứ Ba và Thứ Năm</b>20:00–21:30</p>
+          <p class="slot"><b>Ca 2: Thứ Bảy và Chủ nhật</b>9:30–11:00</p>
+        </div>
+        <p class="urgency">Lớp nhóm mới sắp khai giảng, giữ chỗ ngay hôm nay!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="wrap wrap--narrow">
+      <div class="section-head">
+        <span class="kicker">Hỏi nhanh, đáp gọn</span>
+        <h2>Câu hỏi thường gặp</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary><span class="bubble">Học phí tiếng Anh giao tiếp online là bao nhiêu?</span></summary>
+          <div class="answer"><span class="avatar">C</span><span class="bubble">Lớp 1 kèm 1 từ 250.000 đ/buổi (gói 10 buổi). Lớp nhóm tối đa 4 học viên: 5.500.000 đ/30 buổi. Khóa luyện phỏng vấn từ 4.900.000 đ, tùy trình độ hiện tại.</span></div>
+        </details>
+        <details>
+          <summary><span class="bubble">Có học thử miễn phí không?</span></summary>
+          <div class="answer"><span class="avatar">C</span><span class="bubble">Có. Bạn được kiểm tra trình độ và học thử 1 buổi hoàn toàn miễn phí.</span></div>
+        </details>
+        <details>
+          <summary><span class="bubble">Lớp nhóm có bao nhiêu học viên?</span></summary>
+          <div class="answer"><span class="avatar">C</span><span class="bubble">Tối đa 4 học viên, để mỗi bạn đều có nhiều thời gian luyện nói trong buổi học.</span></div>
+        </details>
+        <details>
+          <summary><span class="bubble">Mất gốc tiếng Anh thì có học được không?</span></summary>
+          <div class="answer"><span class="avatar">C</span><span class="bubble">Được. Trình độ 1 (A1) dành riêng cho người mất gốc: học lại từ phát âm và những mẫu câu giao tiếp thông dụng nhất.</span></div>
+        </details>
+        <details>
+          <summary><span class="bubble">Có luyện phỏng vấn xin việc bằng tiếng Anh không?</span></summary>
+          <div class="answer"><span class="avatar">C</span><span class="bubble">Có. Khóa học 1 kèm 1, điều chỉnh theo từng ngành nghề, kể cả phỏng vấn tiếp viên hàng không (Vietnam Airlines, Vietjet, Sun PhuQuoc Airways, Emirates, Qatar Airways, Cathay Pacific…).</span></div>
+        </details>
+        <details>
+          <summary><span class="bubble">Học online qua nền tảng nào và lịch học ra sao?</span></summary>
+          <div class="answer"><span class="avatar">C</span><span class="bubble">Lớp học qua Zoom hoặc Google Meet, vào các buổi tối trong tuần và cuối tuần; lịch sắp xếp linh hoạt.</span></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENQUIRY ============ -->
+  <section id="enquiry" class="band-teal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Bắt đầu hôm nay</span>
+        <h2>Đăng ký học thử miễn phí</h2>
+        <p class="muted">Điền thông tin bên dưới, Chloe sẽ phản hồi qua Zalo trong vòng 1 giờ.</p>
+      </div>
+      <div class="enquiry-grid">
+        <div class="zalo-first">
+          <a href="REPLACE_ZALO" class="btn btn--zalo btn--lg btn--block draft">Nhắn Zalo ngay</a>
+          <p class="muted">Cách nhanh nhất: nhắn mình qua Zalo. Hoặc để lại thông tin, mình sẽ chủ động liên hệ bạn:</p>
+        </div>
+        <div class="form-card">
+          <div class="chat-card__head">
+            <span class="avatar draft" title="[REPLACE_PHOTO] - thay bằng ảnh Chloe">C</span>
+            <div>
+              <p class="chat-card__name">Chloe</p>
+              <p class="chat-card__status">Thường phản hồi trong 1 giờ</p>
+            </div>
+          </div>
+          <form action="REPLACE_FORMSPREE" method="POST" class="draft">
+            <div class="form-2col">
+              <div class="field"><label class="flabel" for="f-name">Họ và tên</label><input required id="f-name" name="name" placeholder="Nguyễn Thu Trang" autocomplete="name"></div>
+              <div class="field"><label class="flabel" for="f-contact">Số điện thoại (Zalo)</label><input required id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
+            </div>
+            <div class="field"><label class="flabel" for="f-goal">Mục tiêu của bạn</label><select id="f-goal" name="goal">
+              <option value="">Chọn mục tiêu</option>
+              <option>Tiếng Anh giao tiếp hằng ngày</option>
+              <option>Tiếng Anh cho công việc</option>
+              <option>Phỏng vấn xin việc</option>
+              <option>Phỏng vấn tiếp viên hàng không</option>
+              <option>Khác</option>
+            </select></div>
+            <div class="field"><label class="flabel" for="f-format">Hình thức học</label><select id="f-format" name="format">
+              <option value="">Chọn hình thức</option>
+              <option>Học 1 kèm 1</option>
+              <option>Lớp nhóm (tối đa 4 học viên, không dành cho luyện phỏng vấn)</option>
+              <option>Chưa chắc chắn</option>
+            </select></div>
+            <div class="field"><label class="flabel" for="f-msg">Lời nhắn (không bắt buộc)</label><textarea id="f-msg" name="message" rows="3" placeholder="Ví dụ: ngày phỏng vấn, mục tiêu cụ thể của bạn"></textarea></div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block">Đăng ký học thử miễn phí</button>
+            <p class="small muted" style="text-align:center;margin:0">Mình chỉ dùng thông tin này để liên hệ tư vấn cho bạn.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="bg-navy-900 border-t border-white/10 text-slate-400"><div class="max-w-6xl mx-auto px-5 py-10 flex flex-wrap justify-between gap-6"><div><p class="font-bold text-white">Daily Chat <span class="text-sky-400">with Chloe</span></p><p class="mt-2 text-sm">Học tiếng Anh bằng kết nối thật — không phải kịch bản máy móc.</p></div><div class="flex gap-4 text-sm"><a class="draft" href="REPLACE_TIKTOK">TikTok</a><a class="draft" href="REPLACE_FACEBOOK">Facebook</a><a href="terms.html">Điều khoản</a></div><p class="w-full text-xs">© <span id="year"></span> Daily Chat with Chloe</p></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-foot band-ink">
+  <div class="wrap">
+    <div>
+      <a href="#top" class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 4h20a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H14l-6 6v-6H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Z" fill="#7FD1C0"/><text x="16" y="17.5" text-anchor="middle" dominant-baseline="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="13" fill="#22201B">C</text></svg><span>Daily Chat <em>with Chloe</em></span></a>
+      <p class="foot-tag muted">Học tiếng Anh qua những cuộc trò chuyện thật, không rập khuôn, không học vẹt.</p>
+    </div>
+    <nav class="foot-links" aria-label="Liên kết">
+      <a href="REPLACE_TIKTOK" class="draft">TikTok</a>
+      <a href="REPLACE_FACEBOOK" class="draft">Facebook</a>
+      <a href="terms.html">Điều khoản</a>
+    </nav>
+    <p class="copyright">© <span id="year"></span> Daily Chat with Chloe</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="REPLACE_ZALO" class="btn btn--zalo draft">Nhắn Zalo</a>
+  <a href="#enquiry" class="btn btn--primary">Học thử miễn phí</a>
+</div>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+// Hide sticky bar while the enquiry section is visible (progressive enhancement)
+(function(){var bar=document.getElementById('stickyCta'),target=document.getElementById('enquiry');
+if(bar&&target&&'IntersectionObserver'in window){new IntersectionObserver(function(en){bar.classList.toggle('is-hidden',en[0].isIntersecting)},{rootMargin:'0px 0px -20% 0px'}).observe(target)}})();
+// Pricing CTA → preselect goal in the form
+document.querySelectorAll('[data-goal]').forEach(function(a){a.addEventListener('click',function(){var s=document.querySelector('select[name=goal]');if(!s)return;for(var i=0;i<s.options.length;i++){if(s.options[i].text===a.dataset.goal){s.selectedIndex=i;break}}})});
+</script>
 </body></html>

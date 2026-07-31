@@ -1,45 +1,35 @@
 # Daily Chat with Chloe — website (`site/`)
 
-Static bilingual site. **Only this `site/` folder gets deployed**; other repository folders stay private.
+Static bilingual site, chat-first design (see /DESIGN.md). **Only this `site/` folder gets deployed**; other repository folders stay private.
 
 ## Status
+Chat-first redesign + native-Vietnamese copy rewrite in place. The staging `noindex` meta stays on all three HTML pages until launch.
 
-The rebrand and approved site structure are in place. The staging `noindex` meta tag remains on all three HTML pages and must only be removed at launch.
-
-## Before launch — replace placeholders
-
-| Token | What |
-|---|---|
-| `REPLACE_ZALO` | Zalo link / phone |
-| `REPLACE_TIKTOK` | TikTok profile URL |
-| `REPLACE_FACEBOOK` | Facebook page URL |
-| `REPLACE_FORMSPREE` | Formspree endpoint |
-| `REPLACE_PHOTO` | Chloe's photo (hero + about) |
-| `REPLACE_TESTIMONIAL_1` | Learner quote 1 + name/goal |
-| `REPLACE_TESTIMONIAL_2` | Learner quote 2 + name/goal |
-| `REPLACE_TESTIMONIAL_3` | Learner quote 3 + name/goal |
-| `TODO REPLACE_OG_IMAGE` | Add a 1200×630 `og-image.jpg` and its meta tag at launch |
-
-Placeholder blocks use the dashed amber `.draft` outline. It is reserved for photo blocks, testimonial cards, and contact links/forms.
+## Design system
+Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committed file is served as-is by Cloudflare Workers static assets). Fonts: Bricolage Grotesque (display) + Be Vietnam Pro (body), both with Vietnamese subsets. Tokens and rules live in /DESIGN.md.
 
 ## Pages
-
 - `index.html` — Vietnamese primary landing page
-- `index.en.html` — English landing page
-- `terms.html` — terms and conditions draft
+- `index.en.html` — English mirror (identical markup/classes; only text differs)
+- `terms.html` — T&C draft
 
-Both landing pages cover Daily Conversation English and English for Work & Interviews. Cabin-crew coaching is an optional specialization under Work & Interviews, not a standalone product.
+**Sync rule:** any structural/markup change must land in BOTH index files in the same commit. Check parity with:
+`diff <(grep -o 'class="[^"]*"' index.html) <(grep -o 'class="[^"]*"' index.en.html)` → should be empty.
 
-## Pricing summary
+## Before launch — replace placeholders (search `REPLACE_`)
+| Token | What |
+|---|---|
+| `REPLACE_ZALO` | Zalo link / phone (nav, hero, work, enquiry, sticky bar) |
+| `REPLACE_TIKTOK` / `REPLACE_FACEBOOK` | Social URLs (footer) |
+| `REPLACE_FORMSPREE` | Formspree endpoint (enquiry form) |
+| `REPLACE_PHOTO` | Chloe's photos — avatar circles (title attr) + about blob |
+| `REPLACE_TESTIMONIAL_1..3` | Learner quotes + name/goal lines |
+| `TODO REPLACE_OG_IMAGE` | 1200×630 og-image.jpg + meta tag at launch |
 
-- 1-on-1: from 250,000đ per lesson, sold in 10-lesson packages
-- Group of maximum 4: 5,500,000đ per 30-lesson course
-- Interview coaching (1-on-1): from 4,900,000đ, depending on level
+Placeholder elements carry the `.draft` class (dashed coral outline) — remove the class as each is finalized. Also remove the `noindex` meta at launch.
 
 ## Local preview
-
-Open `index.html` in a browser, or run `cd site && python3 -m http.server 8000`, then visit http://localhost:8000.
+`cd site && python3 -m http.server 8787` → http://localhost:8787 (or the repo's `.claude/launch.json` "site" config).
 
 ## Deploy
-
-Cloudflare Pages: framework preset **None**, no build command, output directory `site`. The site uses the Tailwind Play CDN and Plus Jakarta Sans.
+Cloudflare Workers static assets via `wrangler.jsonc` (repo root) — serves `./site` as-is on push to main. No build step.
