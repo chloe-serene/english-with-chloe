@@ -3,7 +3,7 @@
 Captured 2026-07-31 from owner decisions (see research/DECISIONS.md) and session history; not invented.
 
 ## What this is
-Online conversational-English teaching by Chloe — a solo, native-level (lived/worked in Switzerland) female teacher. Vietnamese-first bilingual marketing site; the product is her lessons, sold via Zalo conversation.
+Online conversational-English teaching by Chloe — a solo, native-level (lived and studied in Switzerland) female teacher. Vietnamese-first bilingual marketing site; the product is her lessons, sold via Zalo conversation.
 
 ## Audience
 Vietnamese young professionals, 23–35, mobile-first, discovered via TikTok/Facebook reels, converting in Zalo. Secondary: job-interview candidates (any industry, incl. cabin crew).
