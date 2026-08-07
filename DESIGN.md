@@ -5,25 +5,26 @@ Committed visual world (2026-07-31, user-pinned "Chat-first" direction). This re
 ## World
 The site behaves like opening a message thread with a teacher-friend. The conversation is the interface: proof, levels, FAQ, and testimonials all speak in chat grammar (bubbles, replies, typing). Not an app mockup cosplay — a page that borrows messaging's warmth and immediacy.
 
-## Color — strategy: Committed navy, "Executive Navy + Burnt Orange" (rev 3; owner rejected cream="countryside" and mint/rose="student-y"; reference market = navy+warm accent)
-Deep navy owns whole regions (hero + enquiry bands); crisp WHITE reading ground with cool gray-blue bands; burnt orange appears ONLY on conversion controls (carries WHITE text, 4.74:1). Never cream/earth pastels or mint/rose (owner vetoes). Display font is Archivo 700/800 (Bricolage retired as too playful); body stays Be Vietnam Pro.
+## Color — strategy: Committed emerald, "EatPing" palette (rev 4; owner-pinned reference eatping.com; supersedes rev 1 cream, rev 2 mint/rose, rev 3 navy/orange)
+Deep emerald owns whole regions (hero + enquiry bands); blush off-white reading ground; dark red on conversion controls only (WHITE text, 10:1); peach as warm tint accents. Sourced from eatping.com inline styles: #014B3F emerald, #8B0000 red, #FFBC99 peach, #FCF7F5/#FBEFEA grounds. Display Archivo 700/800; body Be Vietnam Pro.
 
 ```
---ink        #172033   cool navy-black (text; dark panels/footer bg)
---cream      #FFFFFF   reading ground (legacy var name)
---cream-deep #F4F6F8   alternating band
---surface    #FFFFFF   cards (1px #D9E1E8 border)
---teal-900   #17324D   hero/enquiry band (executive navy)
---teal-700   #244C6A   links on white
---teal-600   #2B5D7B   secondary buttons w/ white text (7.1:1)
---teal-100   #DDE8F0   learner bubbles / tints
---teal-050   #EEF3F7   quiet panels
---coral-500  #C9481D   PRIMARY CTA (burnt orange) - WHITE text (4.74:1)
---coral-600  #A93817   hover; small orange text on white (6.4:1)
---coral-100  #FBE7DE   tint rows
+--ink        #2E3B3A   dark slate-green (text; footer/guarantee bg)
+--cream      #FCF7F5   blush off-white ground (EatPing)
+--cream-deep #FBEFEA   blush band (EatPing)
+--surface    #FFFFFF   cards (1px #EADFD8 border)
+--teal-900   #014B3F   hero/enquiry band (EatPing emerald)
+--teal-700   #01614F   links (7:1 on ground)
+--teal-600   #0A5D4C   secondary buttons w/ white text
+--teal-100   #D9EBE2   learner bubbles / tints
+--teal-050   #EDF5F0   quiet panels
+--coral-500  #8B0000   PRIMARY CTA (EatPing dark red) - WHITE text (10:1)
+--coral-600  #6E0000   hover; small red text on white
+--coral-100  #FBD3C0   peach tint rows (EatPing peach family)
 --zalo       #0068FF   Zalo buttons only
---line       #D9E1E8   hairlines/borders
-On navy #17324D: text #F7FAFC; secondary #C6D3DE.
+--line       #EADFD8   warm hairlines/borders
+Peach #FFBC99: hot-price-card checkmarks + footer glyph (emerald+peach = signature pairing).
+On emerald #014B3F: text #F7FBF9; secondary #B9D4C9.
 ```
 
 ## Copy style (owner-mandated)
