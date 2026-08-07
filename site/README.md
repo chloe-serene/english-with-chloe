@@ -15,6 +15,7 @@ Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committe
 
 **Sync rule:** any structural/markup change must land in BOTH index files in the same commit. Check parity with:
 `diff <(grep -o 'class="[^"]*"' index.html) <(grep -o 'class="[^"]*"' index.en.html)` → should be empty.
+(Known intentional exception: the `.on` class in the EN|VI language switcher sits on a different anchor per page.)
 
 ## Before launch — replace placeholders (search `REPLACE_`)
 | Token | What |

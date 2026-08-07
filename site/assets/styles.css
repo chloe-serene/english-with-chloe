@@ -50,7 +50,7 @@ button{font:inherit}
 ::selection{background:var(--teal-100);color:var(--ink)}
 
 /* ---------- Type ---------- */
-h1,h2,h3,.display{font-family:var(--font-display);text-wrap:balance;overflow-wrap:break-word}
+h1,h2,h3{font-family:var(--font-display);text-wrap:balance;overflow-wrap:break-word}
 h1{font-weight:800;font-size:clamp(2.05rem,5.4vw + .6rem,3.35rem);line-height:1.22;padding-top:.08em;letter-spacing:-.01em}
 h2{font-weight:700;font-size:clamp(1.6rem,3vw + .6rem,2.35rem);line-height:1.24;padding-top:.06em}
 h3{font-weight:700;font-size:1.17rem;line-height:1.35}
@@ -73,8 +73,6 @@ section{padding-block:4rem}
 .grid{display:grid;gap:1.25rem}
 @media(min-width:768px){
   .grid-2{grid-template-columns:1fr 1fr}
-  .grid-3{grid-template-columns:repeat(3,1fr)}
-  .grid-4{grid-template-columns:repeat(4,1fr)}
 }
 
 /* Section header: kicker bubble + display heading */
@@ -103,7 +101,6 @@ section{padding-block:4rem}
 .bubble{position:relative;display:inline-block;max-width:36ch;background:var(--surface);border-radius:var(--radius-bubble);padding:.65rem .95rem;font-size:.98rem;line-height:1.5;box-shadow:0 2px 8px -4px rgb(34 32 27 / .14)}
 .bubble--in{border-bottom-left-radius:6px}
 .bubble--out{background:var(--teal-100);border-bottom-right-radius:6px}
-.bubble--teal{background:var(--teal-600);color:#fff;border-bottom-right-radius:6px}
 .bubble-meta{font-size:.78rem;color:var(--muted);margin-top:.35rem}
 .thread{display:flex;flex-direction:column;gap:.55rem}
 .thread .from-me{align-self:flex-end;text-align:left}
@@ -124,7 +121,6 @@ section{padding-block:4rem}
 .avatar{width:2.6rem;height:2.6rem;border-radius:50%;background:var(--teal-100);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;color:var(--teal-700);font-size:1.05rem;text-align:center;flex-shrink:0;overflow:hidden}
 .chat-card__name{font-weight:700;line-height:1.2}
 .chat-card__status{display:flex;align-items:center;gap:.35rem;font-size:.8rem;color:var(--muted)}
-.dot-online{width:.5rem;height:.5rem;border-radius:50%;background:#2FA96B;flex-shrink:0}
 
 /* Hero chat entrance (content visible without JS/motion) */
 @media(prefers-reduced-motion:no-preference){
@@ -311,7 +307,6 @@ section{padding-block:4rem}
 @media(min-width:640px){.form-2col{grid-template-columns:1fr 1fr}}
 input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.8rem .95rem}
 input::placeholder,textarea::placeholder{color:var(--muted)}
-select:invalid{color:var(--muted)}
 input:focus,select:focus,textarea:focus{outline:3px solid var(--teal-100);border-color:var(--teal-600)}
 textarea{resize:vertical}
 
@@ -319,7 +314,7 @@ textarea{resize:vertical}
 .site-foot{padding:3rem 0 2.2rem}
 .site-foot .wrap{display:flex;flex-wrap:wrap;gap:1.6rem;justify-content:space-between;align-items:flex-start}
 .site-foot .brand{color:var(--on-ink)}
-.site-foot .brand em{color:#7FD1C0}
+.site-foot .brand em{color:#FFBC99}
 .foot-tag{margin-top:.6rem;font-size:.92rem;max-width:34ch}
 .foot-links{display:flex;gap:1.2rem;font-size:.92rem}
 .foot-links a{color:var(--on-ink-muted)}

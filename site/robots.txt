@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://english-with-chloe.serenetravel-vietnam.workers.dev/sitemap.xml
