@@ -13,7 +13,7 @@
   --teal-700:#2E5AA7;
   --teal-600:#2E5AA7;
   --teal-100:#D2E8FF;
-  --teal-050:#F7F0CE;
+  --teal-050:#F0E89F;
   --coral-500:#FFA62B;
   --coral-600:#C63D00;
   --coral-100:#F0E89F;
@@ -78,7 +78,7 @@ section{padding-block:4rem}
 /* Section header: kicker bubble + display heading */
 .section-head{margin-bottom:2.25rem}
 .kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:800;color:var(--teal-700);margin-bottom:.8rem;letter-spacing:.02em}
-.kicker::before{content:"▶";color:#E08900;font-size:.7rem}
+.kicker::before{content:"▶";color:#FFA62B;font-size:.7rem}
 .band-teal .kicker{color:var(--on-teal)}
 .band-ink .kicker{color:var(--on-ink)}
 .section-head p{margin-top:.7rem}
@@ -164,7 +164,7 @@ section{padding-block:4rem}
 .hero-menu a{display:flex;align-items:center;gap:.7rem;padding:.95rem .2rem;border-bottom:2px solid var(--ink);color:var(--ink);font-weight:600}
 .hero-menu a:hover{text-decoration:none;background:rgb(255 166 43 / .16)}
 .hero-menu .num{margin-left:auto;font-family:var(--font-display);font-weight:800;font-size:1.5rem}
-.hero-menu .tri{color:#E08900;font-size:.8rem}
+.hero-menu .tri{color:#FFA62B;font-size:.8rem}
 .hero-name{font-weight:700;font-size:1.25rem;text-align:center;margin-top:1.1rem}
 .hero-cred{color:var(--coral-600);font-weight:800;text-align:center;font-family:var(--font-display)}
 @media(min-width:900px){.hero{padding-block:5rem 6.5rem}}
@@ -308,7 +308,7 @@ section{padding-block:4rem}
 .faq summary{list-style:none;cursor:pointer;display:flex}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary .bubble{background:transparent;box-shadow:none;font-weight:700;padding:1rem 2.4rem 1rem 0;position:relative;max-width:none;width:100%;border-radius:0}
-.faq summary .bubble::after{content:"+";position:absolute;right:.4rem;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:#E08900;transition:transform .18s ease}
+.faq summary .bubble::after{content:"+";position:absolute;right:.4rem;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:#FFA62B;transition:transform .18s ease}
 .faq details[open] summary .bubble::after{transform:translateY(-50%) rotate(45deg)}
 .faq .answer{display:flex;gap:.55rem;align-items:flex-start;padding-bottom:1rem}
 .faq .answer .avatar{width:1.9rem;height:1.9rem;font-size:.62rem}
