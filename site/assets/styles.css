@@ -6,17 +6,17 @@
 /* ---------- Tokens ---------- */
 :root{
   --ink:#32373C;
-  --cream:#FBF4DF;
+  --cream:#FCF8E8;
   --cream-deep:#FFFFFF;
   --surface:#FFFFFF;
-  --teal-900:#FECD0D;
-  --teal-700:#C81E1E;
+  --teal-900:#FFA62B;
+  --teal-700:#2E5AA7;
   --teal-600:#32373C;
-  --teal-100:#FFF3C4;
-  --teal-050:#FFF8DC;
-  --coral-500:#FECD0D;
-  --coral-600:#C81E1E;
-  --coral-100:#FFF3C4;
+  --teal-100:#D2E8FF;
+  --teal-050:#F7F0CE;
+  --coral-500:#FFA62B;
+  --coral-600:#C63D00;
+  --coral-100:#F0E89F;
   --zalo:#0068FF;
   --line:#DCDCDC;
   --muted:#5B6166;
@@ -78,7 +78,7 @@ section{padding-block:4rem}
 /* Section header: kicker bubble + display heading */
 .section-head{margin-bottom:2.25rem}
 .kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:800;color:var(--teal-700);margin-bottom:.8rem;letter-spacing:.02em}
-.kicker::before{content:"▶";color:#E0B000;font-size:.7rem}
+.kicker::before{content:"▶";color:#E08900;font-size:.7rem}
 .band-teal .kicker{color:var(--on-teal)}
 .band-ink .kicker{color:var(--on-ink)}
 .section-head p{margin-top:.7rem}
@@ -88,7 +88,7 @@ section{padding-block:4rem}
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
 .btn:active{transform:translateY(0)}
 .btn--primary{background:var(--coral-500);color:var(--ink)}
-.btn--primary:hover{background:#EDBD00}
+.btn--primary:hover{background:#F29800}
 .btn--teal{background:var(--teal-600);color:#fff}
 .btn--teal:hover{background:#1F2428}
 .btn--zalo{background:var(--zalo);color:#fff}
@@ -158,15 +158,15 @@ section{padding-block:4rem}
 
 /* ---------- Hero ---------- */
 .hero{padding-block:3.5rem 4.5rem}
-.display-kicker{font-family:var(--font-display);font-weight:800;font-size:clamp(2rem,4.5vw + .5rem,3.2rem);color:#E0B000;letter-spacing:.01em;line-height:1.15;padding-top:.06em}
+.display-kicker{font-family:var(--font-display);font-weight:800;font-size:clamp(2rem,4.5vw + .5rem,3.2rem);color:var(--teal-700);letter-spacing:.01em;line-height:1.15;padding-top:.06em}
 .hero-h1{font-size:clamp(1.35rem,1.4vw + 1rem,1.8rem);font-weight:700;line-height:1.35;margin-top:1rem;max-width:30ch}
 .hero-menu{margin-top:2.6rem;max-width:26rem;display:grid;gap:0}
 .hero-menu a{display:flex;align-items:center;gap:.7rem;padding:.95rem .2rem;border-bottom:2px solid var(--ink);color:var(--ink);font-weight:600}
-.hero-menu a:hover{text-decoration:none;background:rgb(254 205 13 / .18)}
+.hero-menu a:hover{text-decoration:none;background:rgb(255 166 43 / .16)}
 .hero-menu .num{margin-left:auto;font-family:var(--font-display);font-weight:800;font-size:1.5rem}
-.hero-menu .tri{color:#E0B000;font-size:.8rem}
+.hero-menu .tri{color:#E08900;font-size:.8rem}
 .hero-name{font-weight:700;font-size:1.25rem;text-align:center;margin-top:1.1rem}
-.hero-cred{color:var(--teal-700);font-weight:800;text-align:center;font-family:var(--font-display)}
+.hero-cred{color:var(--coral-600);font-weight:800;text-align:center;font-family:var(--font-display)}
 @media(min-width:900px){.hero{padding-block:5rem 6.5rem}}
 .hero .wrap{display:grid;gap:2.75rem;align-items:center}
 @media(min-width:900px){.hero .wrap{grid-template-columns:1.08fr .92fr}}
@@ -310,7 +310,7 @@ section{padding-block:4rem}
 .faq summary{list-style:none;cursor:pointer;display:flex}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary .bubble{background:transparent;box-shadow:none;font-weight:700;padding:1rem 2.4rem 1rem 0;position:relative;max-width:none;width:100%;border-radius:0}
-.faq summary .bubble::after{content:"+";position:absolute;right:.4rem;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:#E0B000;transition:transform .18s ease}
+.faq summary .bubble::after{content:"+";position:absolute;right:.4rem;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:#E08900;transition:transform .18s ease}
 .faq details[open] summary .bubble::after{transform:translateY(-50%) rotate(45deg)}
 .faq .answer{display:flex;gap:.55rem;align-items:flex-start;padding-bottom:1rem}
 .faq .answer .avatar{width:1.9rem;height:1.9rem;font-size:.62rem}
