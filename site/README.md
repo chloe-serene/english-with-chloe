@@ -25,7 +25,7 @@ Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committe
 | `REPLACE_FORMSPREE` | Formspree endpoint (enquiry form) |
 | `REPLACE_PHOTO` | Chloe's photos — avatar circles (title attr) + about blob |
 | `REPLACE_TESTIMONIAL_1..3` | Learner quotes + name/goal lines |
-| `TODO REPLACE_OG_IMAGE` | 1200×630 og-image.jpg + meta tag at launch |
+| og-image v2 | v1 (brand-only) ships at `assets/og-image.png`; swap in a photo version at launch |
 
 Placeholder elements carry the `.draft` class (dashed coral outline) — remove the class as each is finalized. Also remove the `noindex` meta at launch.
 
