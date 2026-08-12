@@ -187,6 +187,17 @@ section{padding-block:4rem}
 .course-foot{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;justify-content:space-between;margin-top:1.5rem}
 .price-bubble{display:inline-block;background:var(--teal-600);color:#fff;font-weight:600;font-size:.92rem;border-radius:var(--radius-bubble);border-bottom-left-radius:6px;padding:.55rem .9rem}
 .course-link{font-weight:700;font-size:.94rem;white-space:nowrap}
+.course-foot--stack{flex-direction:column;align-items:flex-start;gap:.55rem}
+.course-note{margin-top:.9rem;font-size:.85rem;color:var(--muted)}
+
+/* ---------- Schedule table ---------- */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.sched{width:100%;min-width:40rem;border-collapse:collapse;font-size:.95rem;background:var(--surface);border-radius:14px;overflow:hidden}
+.sched th{background:var(--teal-900);color:var(--on-teal);text-align:left;font-weight:700;padding:.8rem 1rem;font-size:.88rem}
+.sched td{padding:.85rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+.sched tbody tr:last-child td{border-bottom:0}
+.sched tbody tr:nth-child(even){background:var(--teal-050)}
+.sched-note{margin-top:1rem;font-size:.88rem;color:var(--muted);max-width:60ch}
 
 /* ---------- Work checklist ---------- */
 .checklist{display:grid;gap:1.05rem;margin-top:2rem}
@@ -276,12 +287,6 @@ section{padding-block:4rem}
 .offer--coral{background:var(--coral-100)}
 .offer--teal{background:var(--teal-100)}
 .offer b{font-weight:700}
-.schedule{margin-top:1.6rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);padding:1.5rem 1.5rem;box-shadow:var(--shadow-card)}
-.schedule .slots{display:grid;gap:.8rem;margin-top:.9rem}
-@media(min-width:640px){.schedule .slots{grid-template-columns:1fr 1fr}}
-.slot{background:var(--cream-deep);border-radius:14px;padding:.85rem 1rem;font-size:.95rem}
-.slot b{display:block}
-.urgency{margin-top:1rem;font-weight:700;color:var(--coral-600);font-size:.95rem}
 
 /* ---------- FAQ: dialogue ---------- */
 .faq{max-width:46rem}
