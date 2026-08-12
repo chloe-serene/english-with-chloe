@@ -7,9 +7,9 @@
 :root{
   --ink:#2A2E33;
   --cream:#FBF8EC;
-  --cream-deep:#F6EFDA;
+  --cream-deep:#F5EFE3;
   --surface:#FFFFFF;
-  --teal-900:#F5E8C6;
+  --teal-900:#F0E89F;
   --teal-700:#2E5AA7;
   --teal-600:#3F5B56;
   --teal-100:#E4F0FD;
@@ -84,7 +84,7 @@ section{padding-block:4rem}
 .section-head p{margin-top:.7rem}
 
 /* ---------- Buttons ---------- */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:0;border-radius:10px;padding:.85rem 1.6rem;font-weight:700;font-size:1rem;line-height:1.2;cursor:pointer;text-decoration:none;transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:0;border-radius:13px;padding:.85rem 1.6rem;font-weight:700;font-size:1rem;line-height:1.2;cursor:pointer;text-decoration:none;transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
 .btn:active{transform:translateY(0)}
 .btn--primary{background:var(--coral-500);color:#1B1410;box-shadow:0 6px 16px -10px rgb(235 70 0 / .45)}
@@ -164,7 +164,8 @@ section{padding-block:4rem}
 .hero h1{max-width:22ch}
 .hero .lead{margin-top:1.15rem;max-width:52ch;color:var(--ink)}
 .hero .lead b{color:var(--coral-600)}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.9rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;margin-top:1.9rem}
+.hero-link{font-weight:700;color:var(--teal-700)}
 .hero-note{margin-top:1.1rem;font-size:.88rem;color:var(--muted)}
 .hero-chat{max-width:24.5rem;justify-self:center;width:100%}
 .hero-photo{position:relative;aspect-ratio:4/5;width:100%;border-radius:18px;background:var(--teal-100);display:grid;place-items:center;text-align:center;color:var(--teal-700);font-weight:600;box-shadow:0 14px 34px -18px rgb(42 46 51 / .25)}
