@@ -61,7 +61,7 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
     </nav>
     <div class="head-actions">
       <span class="lang"><a href="index.en.html">EN</a><a href="index.html" class="on" aria-current="true">VI</a></span>
-      <a href="REPLACE_ZALO" class="btn btn--primary head-cta draft">Nhắn Zalo</a>
+      <a href="REPLACE_ZALO" class="btn btn--primary head-cta draft" data-placement="header">Nhắn Zalo</a>
     </div>
   </div>
 </header>
@@ -75,7 +75,7 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
         <p class="display-kicker">DAILY CHAT.</p>
         <h1 class="hero-h1">Tiếng Anh giao tiếp online cho người đi làm. Nói thật hơn, tự tin hơn.</h1>
         <div class="hero-ctas">
-          <a href="REPLACE_ZALO" class="btn btn--primary btn--lg draft">Học thử cùng Chloe nhé</a>
+          <a href="REPLACE_ZALO" class="btn btn--primary btn--lg draft" data-placement="hero">Học thử cùng Chloe nhé</a>
         </div>
         <nav class="hero-menu" aria-label="Lối tắt">
           <a href="#enquiry"><span class="tri">▶</span> Kiểm tra trình độ miễn phí <span class="num">01</span></a>
@@ -403,7 +403,7 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
       </div>
       <div class="enquiry-grid">
         <div class="zalo-first">
-          <a href="REPLACE_ZALO" class="btn btn--zalo btn--lg btn--block draft">Nhắn Zalo ngay</a>
+          <a href="REPLACE_ZALO" class="btn btn--zalo btn--lg btn--block draft" data-placement="enquiry">Nhắn Zalo ngay</a>
           <p class="muted">Cách nhanh nhất: nhắn mình qua Zalo. Hoặc để lại thông tin, mình sẽ chủ động liên hệ bạn:</p>
         </div>
         <div class="form-card">
@@ -416,8 +416,8 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
           </div>
           <form action="REPLACE_FORMSPREE" method="POST" class="draft">
             <div class="form-2col">
-              <div class="field"><label class="flabel" for="f-name">Họ và tên</label><input required id="f-name" name="name" placeholder="Nguyễn Thu Trang" autocomplete="name"></div>
-              <div class="field"><label class="flabel" for="f-contact">Số điện thoại (Zalo)</label><input required id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
+              <div class="field"><label class="flabel" for="f-name">Họ và tên</label><input required minlength="2" id="f-name" name="name" placeholder="Nguyễn Thu Trang" autocomplete="name"></div>
+              <div class="field"><label class="flabel" for="f-contact">Số điện thoại (Zalo)</label><input required pattern="[0-9+ ()-]{8,20}" id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
             </div>
             <div class="field"><label class="flabel" for="f-goal">Mục tiêu của bạn</label><select id="f-goal" name="goal">
               <option value="">Chọn mục tiêu</option>
@@ -434,6 +434,8 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
               <option>Chưa chắc chắn</option>
             </select></div>
             <div class="field"><label class="flabel" for="f-msg">Lời nhắn (không bắt buộc)</label><textarea id="f-msg" name="message" rows="3" placeholder="Ví dụ: ngày phỏng vấn, mục tiêu cụ thể của bạn"></textarea></div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+            <p class="form-status" role="status" aria-live="polite"></p>
             <button type="submit" class="btn btn--primary btn--lg btn--block">Đăng ký học thử miễn phí</button>
             <p class="small muted" style="text-align:center;margin:0">Mình chỉ dùng thông tin này để liên hệ tư vấn cho bạn.</p>
           </form>
@@ -461,8 +463,8 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
 
 <!-- ============ STICKY MOBILE CTA ============ -->
 <div class="sticky-cta" id="stickyCta">
-  <a href="REPLACE_ZALO" class="btn btn--zalo draft">Nhắn Zalo</a>
-  <a href="#enquiry" class="btn btn--primary">Học thử miễn phí</a>
+  <a href="REPLACE_ZALO" class="btn btn--zalo draft" data-placement="sticky">Nhắn Zalo</a>
+  <a href="#enquiry" class="btn btn--primary" data-placement="sticky">Học thử miễn phí</a>
 </div>
 
 <script>
@@ -471,6 +473,17 @@ document.getElementById('year').textContent=new Date().getFullYear();
 (function(){var bar=document.getElementById('stickyCta'),target=document.getElementById('enquiry');
 if(bar&&target&&'IntersectionObserver'in window){new IntersectionObserver(function(en){bar.classList.toggle('is-hidden',en[0].isIntersecting)},{rootMargin:'0px 0px -20% 0px'}).observe(target)}})();
 // Pricing CTA → preselect goal in the form
+
+// Enhanced form submit (graceful fallback to native POST if JS fails)
+(function(){var form=document.querySelector('form[action]');if(!form||!window.fetch)return;
+form.addEventListener('submit',function(e){e.preventDefault();if(!form.reportValidity())return;
+var btn=form.querySelector('button[type=submit]'),st=form.querySelector('.form-status');
+btn.disabled=true;btn.textContent='Đang gửi…';
+fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}})
+.then(function(r){if(!r.ok)throw 0;form.reset();st.textContent='Đã gửi thành công. Chloe sẽ liên hệ bạn sớm!';
+if(typeof gtag==='function')gtag('event','generate_lead',{method:'formspree'});})
+.catch(function(){st.textContent='Không gửi được. Vui lòng thử lại hoặc nhắn Zalo cho Chloe.';})
+.finally(function(){btn.disabled=false;btn.textContent='Đăng ký học thử miễn phí';});});})();
 document.querySelectorAll('[data-goal]').forEach(function(a){a.addEventListener('click',function(){var s=document.querySelector('select[name=goal]');if(!s)return;for(var i=0;i<s.options.length;i++){if(s.options[i].text===a.dataset.goal){s.selectedIndex=i;break}}})});
 </script>
 </body></html>

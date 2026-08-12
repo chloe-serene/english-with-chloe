@@ -307,6 +307,8 @@ section{padding-block:4rem}
 .form-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px -16px rgb(0 0 0 / .25);overflow:hidden;color:var(--ink)}
 .form-card form{padding:1.4rem;display:grid;gap:.95rem}
 .field{display:grid;gap:.35rem}
+.form-status{font-size:.9rem;font-weight:600;min-height:1.2em;margin:0}
+.form-status:empty{display:none}
 .flabel{font-size:.8rem;font-weight:600;color:var(--muted)}
 .form-2col{display:grid;gap:.9rem}
 @media(min-width:640px){.form-2col{grid-template-columns:1fr 1fr}}

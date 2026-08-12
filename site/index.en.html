@@ -56,7 +56,7 @@
     </nav>
     <div class="head-actions">
       <span class="lang"><a href="index.en.html" class="on" aria-current="true">EN</a><a href="index.html">VI</a></span>
-      <a href="REPLACE_ZALO" class="btn btn--primary head-cta draft">Chat on Zalo</a>
+      <a href="REPLACE_ZALO" class="btn btn--primary head-cta draft" data-placement="header">Chat on Zalo</a>
     </div>
   </div>
 </header>
@@ -70,7 +70,7 @@
         <p class="display-kicker">DAILY CHAT.</p>
         <h1 class="hero-h1">Online English for Vietnamese professionals. Speak more naturally, more confidently.</h1>
         <div class="hero-ctas">
-          <a href="REPLACE_ZALO" class="btn btn--primary btn--lg draft">Try a free lesson with Chloe</a>
+          <a href="REPLACE_ZALO" class="btn btn--primary btn--lg draft" data-placement="hero">Try a free lesson with Chloe</a>
         </div>
         <nav class="hero-menu" aria-label="Shortcuts">
           <a href="#enquiry"><span class="tri">▶</span> Free level test <span class="num">01</span></a>
@@ -398,7 +398,7 @@
       </div>
       <div class="enquiry-grid">
         <div class="zalo-first">
-          <a href="REPLACE_ZALO" class="btn btn--zalo btn--lg btn--block draft">Message on Zalo now</a>
+          <a href="REPLACE_ZALO" class="btn btn--zalo btn--lg btn--block draft" data-placement="enquiry">Message on Zalo now</a>
           <p class="muted">The fastest way: message Chloe on Zalo. Or leave your details and Chloe will reach out to you:</p>
         </div>
         <div class="form-card">
@@ -411,8 +411,8 @@
           </div>
           <form action="REPLACE_FORMSPREE" method="POST" class="draft">
             <div class="form-2col">
-              <div class="field"><label class="flabel" for="f-name">Your name</label><input required id="f-name" name="name" placeholder="Nguyen Thu Trang" autocomplete="name"></div>
-              <div class="field"><label class="flabel" for="f-contact">Phone (Zalo)</label><input required id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
+              <div class="field"><label class="flabel" for="f-name">Your name</label><input required minlength="2" id="f-name" name="name" placeholder="Nguyen Thu Trang" autocomplete="name"></div>
+              <div class="field"><label class="flabel" for="f-contact">Phone (Zalo)</label><input required pattern="[0-9+ ()-]{8,20}" id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
             </div>
             <div class="field"><label class="flabel" for="f-goal">Your goal</label><select id="f-goal" name="goal">
               <option value="">Choose a goal</option>
@@ -429,6 +429,8 @@
               <option>Not sure yet</option>
             </select></div>
             <div class="field"><label class="flabel" for="f-msg">Message (optional)</label><textarea id="f-msg" name="message" rows="3" placeholder="For example: your interview date, your specific goal"></textarea></div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+            <p class="form-status" role="status" aria-live="polite"></p>
             <button type="submit" class="btn btn--primary btn--lg btn--block">Book my free trial lesson</button>
             <p class="small muted" style="text-align:center;margin:0">Your details are only used to get back to you.</p>
           </form>
@@ -456,8 +458,8 @@
 
 <!-- ============ STICKY MOBILE CTA ============ -->
 <div class="sticky-cta" id="stickyCta">
-  <a href="REPLACE_ZALO" class="btn btn--zalo draft">Chat on Zalo</a>
-  <a href="#enquiry" class="btn btn--primary">Free trial lesson</a>
+  <a href="REPLACE_ZALO" class="btn btn--zalo draft" data-placement="sticky">Chat on Zalo</a>
+  <a href="#enquiry" class="btn btn--primary" data-placement="sticky">Free trial lesson</a>
 </div>
 
 <script>
@@ -466,6 +468,17 @@ document.getElementById('year').textContent=new Date().getFullYear();
 (function(){var bar=document.getElementById('stickyCta'),target=document.getElementById('enquiry');
 if(bar&&target&&'IntersectionObserver'in window){new IntersectionObserver(function(en){bar.classList.toggle('is-hidden',en[0].isIntersecting)},{rootMargin:'0px 0px -20% 0px'}).observe(target)}})();
 // Pricing CTA → preselect goal in the form
+
+// Enhanced form submit (graceful fallback to native POST if JS fails)
+(function(){var form=document.querySelector('form[action]');if(!form||!window.fetch)return;
+form.addEventListener('submit',function(e){e.preventDefault();if(!form.reportValidity())return;
+var btn=form.querySelector('button[type=submit]'),st=form.querySelector('.form-status');
+btn.disabled=true;btn.textContent='Sending…';
+fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}})
+.then(function(r){if(!r.ok)throw 0;form.reset();st.textContent='Sent! Chloe will get back to you soon.';
+if(typeof gtag==='function')gtag('event','generate_lead',{method:'formspree'});})
+.catch(function(){st.textContent='Could not send. Please try again or message Chloe on Zalo.';})
+.finally(function(){btn.disabled=false;btn.textContent='Book my free trial lesson';});});})();
 document.querySelectorAll('[data-goal]').forEach(function(a){a.addEventListener('click',function(){var s=document.querySelector('select[name=goal]');if(!s)return;for(var i=0;i<s.options.length;i++){if(s.options[i].text===a.dataset.goal){s.selectedIndex=i;break}}})});
 </script>
 </body></html>
