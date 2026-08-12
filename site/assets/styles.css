@@ -11,7 +11,7 @@
   --surface:#FFFFFF;
   --teal-900:#FFA62B;
   --teal-700:#2E5AA7;
-  --teal-600:#32373C;
+  --teal-600:#2E5AA7;
   --teal-100:#D2E8FF;
   --teal-050:#F7F0CE;
   --coral-500:#FFA62B;
@@ -90,7 +90,7 @@ section{padding-block:4rem}
 .btn--primary{background:var(--coral-500);color:var(--ink)}
 .btn--primary:hover{background:#F29800}
 .btn--teal{background:var(--teal-600);color:#fff}
-.btn--teal:hover{background:#1F2428}
+.btn--teal:hover{background:#24487F}
 .btn--zalo{background:var(--zalo);color:#fff}
 .btn--zalo:hover{background:#0059DB}
 .btn--ghost{background:var(--surface);color:var(--ink);border:2px solid var(--ink);font-weight:700}
@@ -152,7 +152,7 @@ section{padding-block:4rem}
 .lang{display:inline-flex;background:var(--surface);border:1px solid var(--surface);border-radius:999px;overflow:hidden;font-size:.76rem;font-weight:700}
 .lang a{padding:.3rem .6rem;color:var(--muted)}
 .lang a:hover{text-decoration:none}
-.lang .on{background:var(--ink);color:#fff}
+.lang .on{background:var(--teal-600);color:#fff}
 .head-cta{padding:.55rem 1.05rem;font-size:.85rem;background:var(--surface)}
 @media(max-width:639px){.head-cta{display:none}}
 
@@ -221,8 +221,6 @@ section{padding-block:4rem}
 .check svg{width:1.35rem;height:1.35rem;flex-shrink:0;margin-top:.2rem}
 .check b{display:block;font-weight:700}
 .check span{font-size:.93rem;color:var(--muted)}
-.airlines{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.4rem}
-.airlines i{font-style:normal;font-size:.8rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.18rem .6rem;color:var(--muted)}
 .proof-chat{margin-top:2.4rem;max-width:26rem}
 .guarantee{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--line);max-width:56ch}
 .guarantee h3{color:var(--coral-600);padding-top:.05em}
