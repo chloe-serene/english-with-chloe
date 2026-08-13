@@ -416,7 +416,7 @@
           <form action="REPLACE_FORMSPREE" method="POST" class="draft">
             <div class="form-2col">
               <div class="field"><label class="flabel" for="f-name">Your name</label><input required minlength="2" id="f-name" name="name" placeholder="Nguyen Thu Trang" autocomplete="name"></div>
-              <div class="field"><label class="flabel" for="f-contact">Phone (Zalo)</label><input required pattern="[0-9+ ()-]{8,20}" id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
+              <div class="field"><label class="flabel" for="f-contact">Phone (Zalo)</label><input required pattern="[0-9+ \(\)\-]{8,20}" id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
             </div>
             <div class="field"><label class="flabel" for="f-goal">Your goal</label><select id="f-goal" name="goal">
               <option value="">Choose a goal</option>

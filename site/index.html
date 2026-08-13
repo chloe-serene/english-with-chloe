@@ -421,7 +421,7 @@ Chat bubbles appear as brand accents (demo conversation, proof convo, testimonia
           <form action="REPLACE_FORMSPREE" method="POST" class="draft">
             <div class="form-2col">
               <div class="field"><label class="flabel" for="f-name">Họ và tên</label><input required minlength="2" id="f-name" name="name" placeholder="Nguyễn Thu Trang" autocomplete="name"></div>
-              <div class="field"><label class="flabel" for="f-contact">Số điện thoại (Zalo)</label><input required pattern="[0-9+ ()-]{8,20}" id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
+              <div class="field"><label class="flabel" for="f-contact">Số điện thoại (Zalo)</label><input required pattern="[0-9+ \(\)\-]{8,20}" id="f-contact" name="contact" placeholder="09xx xxx xxx" inputmode="tel" autocomplete="tel"></div>
             </div>
             <div class="field"><label class="flabel" for="f-goal">Mục tiêu của bạn</label><select id="f-goal" name="goal">
               <option value="">Chọn mục tiêu</option>
