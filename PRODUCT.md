@@ -9,7 +9,7 @@ Online conversational-English teaching by Chloe — a solo, native-level (lived 
 Vietnamese young professionals, 23–35, mobile-first, discovered via TikTok/Facebook reels, converting in Zalo. Secondary: job-interview candidates (any industry, incl. cabin crew).
 
 ## Offers & prices (owner-set, staging-confirmed)
-- Daily Conversation English: 1-1 from 250.000đ/60-min lesson (10-lesson packs); groups of max 4, 5.500.000đ / 30 × 90-min lessons. Levels: L1 (A1), L2 (A2), L3 (A2+–B1). Free level test + free trial lesson.
+- Daily Conversation English: 1-1 from 250.000đ/60-min lesson (10-lesson packs); groups of max 5, 5.500.000đ / 30 × 90-min lessons. Levels: L1 (A1), L2 (A2), L3 (A2+–B1). Free level test + free trial lesson.
 - English for Work & Interviews: from 4.900.000đ (level-dependent, consult on Zalo), 1-1 only; airline options: Vietnam Airlines, Vietjet, Sun PhuQuoc Airways, Emirates, Qatar Airways, Cathay Pacific.
 - Guarantees: interview students — free continued coaching until interview-ready; general — refund unused lessons after first pack. First-ever group: ~30% launch discount, once.
 - Group schedule: Tue/Thu 20:00–21:30, Sat/Sun 9:30–11:00; cohort waitlist model.

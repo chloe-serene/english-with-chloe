@@ -339,7 +339,7 @@ body{padding-bottom:calc(4.4rem + env(safe-area-inset-bottom))}
 
 
 /* ---------- Draft placeholders ---------- */
-.draft{outline:1.5px dashed rgb(235 70 0 / .5);outline-offset:3px}
+.draft{}
 
 /* ---------- Reduced motion ---------- */
 @media(prefers-reduced-motion:reduce){
