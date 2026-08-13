@@ -468,9 +468,10 @@
 
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
-// Hide sticky bar while the enquiry section is visible (progressive enhancement)
-(function(){var bar=document.getElementById('stickyCta'),target=document.getElementById('enquiry');
-if(bar&&target&&'IntersectionObserver'in window){new IntersectionObserver(function(en){bar.classList.toggle('is-hidden',en[0].isIntersecting)},{rootMargin:'0px 0px -20% 0px'}).observe(target)}})();
+// Hide sticky bar while the enquiry section is on screen (scroll check; IO unreliable in some webviews)
+(function(){var bar=document.getElementById('stickyCta'),t=document.getElementById('enquiry');
+if(!bar||!t)return;function u(){var r=t.getBoundingClientRect();bar.classList.toggle('is-hidden',r.top<innerHeight*0.8&&r.bottom>0)}
+addEventListener('scroll',u,{passive:true});addEventListener('resize',u,{passive:true});u()})();
 // Pricing CTA → preselect goal in the form
 
 // Enhanced form submit (graceful fallback to native POST if JS fails)
