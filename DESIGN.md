@@ -51,3 +51,6 @@ Bands: teal-900 hero → cream → cream-deep → … → ink guarantee moment �
 
 ## Files
 `site/assets/styles.css` is the single stylesheet (hand-written, committed; no Tailwind). VI/EN pages share identical markup/classes — text nodes differ only. Frozen: SEO scaffolding, section ids, REPLACE_* tokens, form field names.
+
+## Rev 8 (2026-08-13) — Preply-style softening (owner round-8 feedback)
+Layout unchanged; restyle only. Display font Archivo → Bricolage Grotesque (soft, VN subset; same face VUS uses), sentence case everywhere (kicker now "Daily Chat."). Ground lightened #FCF8E8 → #FFFDF8; hero band pale Baby Blue #EFF6FF; deep bands pale Buttercream #FBF8E9. Buttons: 12px radius, no uppercase/letter-spacing, weight 600; secondary = Baby Blue pastel + ink (Preply pattern). Citrus reserved for primary CTAs only — header and sticky bar are now light with hairlines; schedule header and hot price card use pale Buttercream. All 2px ink rules → 1px hairlines (--line #ECE7DB / --line-strong #CFC9BB); shadows removed. Reference DNA probed live from preply.com and english.vus.edu.vn.
