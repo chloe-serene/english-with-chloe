@@ -208,11 +208,11 @@ section{padding-block:4rem}
   .sched,.sched tbody,.sched tr,.sched td{display:block}
   .sched thead{display:none}
   .sched tr{border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;margin-bottom:.8rem;background:var(--surface)}
-  .sched td{border:0 !important;padding:.12rem 0;font-size:.93rem}
-  .sched td:first-child{font-size:1.02rem;margin-bottom:.3rem}
-  .sched td[data-l]::before{content:attr(data-l) ": ";color:var(--muted)}
-  .sched tbody tr:nth-child(even){background:var(--surface)}
-  .sched tr:last-child{margin-bottom:0}
+  table.sched tbody td{border:0;padding:.1rem 0;font-size:.93rem;line-height:1.5}
+  table.sched tbody td:first-child{font-size:1.02rem;margin-bottom:.35rem}
+  table.sched tbody td[data-l]::before{content:attr(data-l) ": ";color:var(--muted)}
+  table.sched tbody tr:nth-child(even){background:var(--surface)}
+  table.sched tbody tr:last-child{margin-bottom:0}
 }
 .sched th{background:var(--teal-050);color:var(--ink);text-align:left;font-weight:700;padding:.8rem 1rem;font-size:.88rem}
 .sched td{padding:.85rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
