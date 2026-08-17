@@ -162,15 +162,16 @@ section{padding-block:4rem}
   .hero .hero-chat{grid-row:4;margin-top:1.4rem}
   .hero .hero-menu{grid-row:5;width:100%;margin-top:.6rem;max-width:none}
 }
-@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;gap:4rem}.hero-chat{max-width:27rem}.meet{max-width:26rem}}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;gap:4rem}.hero-chat{max-width:24rem}.meet{max-width:22rem}}
 .hero h1{max-width:22ch}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;margin-top:1.9rem}
 .hero-chat{max-width:24.5rem;justify-self:center;width:100%}
-/* "Meet Chloe" figure (owner reference: Meet Desi poster, arrows removed) */
-.meet{position:relative;container-type:inline-size;margin:0 auto;width:100%;max-width:24rem;aspect-ratio:1/1.1;display:grid;place-items:end center}
-.meet-script{position:absolute;left:2%;top:0;font-family:var(--font-display);font-weight:700;font-style:italic;font-size:clamp(1.9rem,5.5vw,2.6rem);color:var(--coral-500);transform:rotate(-8deg);z-index:2;line-height:1}
-.meet-word{position:absolute;left:50%;top:14%;transform:translateX(-50%);font-family:var(--font-display);font-weight:800;font-size:clamp(5.6rem,38cqw,8.75rem);max-width:112%;line-height:1;letter-spacing:-.03em;color:var(--teal-900);opacity:.22;white-space:nowrap;user-select:none;z-index:0}
-.meet-photo{position:relative;z-index:1;width:78%;height:auto;max-height:100%;object-fit:contain;object-position:50% 100%;border-radius:0;display:block}
+/* Hero portrait: clean Preply-style card until a plain-background photo arrives for the poster treatment */
+.meet{position:relative;margin:0 auto;width:100%;max-width:21rem}
+.meet-word{display:none}
+.meet-script{position:absolute;left:-.4rem;top:-.9rem;z-index:2;font-family:var(--font-display);font-weight:700;font-style:italic;font-size:1.35rem;line-height:1;color:#fff;background:var(--orange-ui);padding:.4rem .8rem;border-radius:999px;transform:rotate(-6deg)}
+.meet-photo{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:20px;display:block}
+@media(max-width:899px){.meet{max-width:17rem}}
 
 /* ---------- Result claim (owner copy) ---------- */
 .claim{padding-block:2.75rem;background:var(--surface);border-bottom:1px solid var(--line)}
@@ -263,7 +264,7 @@ section{padding-block:4rem}
 /* ---------- About ---------- */
 .about .wrap{display:grid;gap:2.5rem;align-items:center}
 @media(min-width:900px){.about .wrap{grid-template-columns:.9fr 1.1fr}}
-.about-photo{aspect-ratio:4/5;max-width:22rem;width:100%;justify-self:center;object-fit:cover;object-position:50% 20%;border-radius:20px;display:block}
+.about-photo{aspect-ratio:4/5;height:auto;max-width:22rem;width:100%;justify-self:center;object-fit:cover;object-position:50% 20%;border-radius:20px;display:block}
 @media(max-width:899px){.about-photo{max-width:18rem}}
 .about p.body{margin-top:1.1rem;color:var(--muted)}
 
