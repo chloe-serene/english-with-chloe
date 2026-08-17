@@ -21,13 +21,11 @@ Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committe
 | Token | What |
 |---|---|
 | `REPLACE_ZALO` | Zalo link / phone (nav, hero, work, enquiry, sticky bar) |
-| `REPLACE_TIKTOK` / `REPLACE_FACEBOOK` | Social URLs (footer) |
+| `REPLACE_TIKTOK` / `REPLACE_FACEBOOK` / `REPLACE_INSTAGRAM` | Social URLs (footer) |
 | `REPLACE_FORMSPREE` | Formspree endpoint (enquiry form) |
-| `REPLACE_PHOTO` | Chloe's photos — avatar circles (title attr) + about blob |
-| `REPLACE_TESTIMONIAL_1..3` | Learner quotes + name/goal lines |
 | og-image v2 | v1 (brand-only) ships at `assets/og-image.png`; swap in a photo version at launch |
 
-Placeholder elements carry the `.draft` class (dashed coral outline) — remove the class as each is finalized. Also remove the `noindex` meta at launch.
+Placeholder links carry the `.draft` class (no visual effect now); remove it as each is finalized. Also remove the `noindex` meta at launch. Photos, logo and testimonials are real as of rev 9 (assets/chloe*.jpg, student-*.jpg, logo-*.png).
 
 ## Local preview
 `cd site && python3 -m http.server 8787` → http://localhost:8787 (or the repo's `.claude/launch.json` "site" config).
