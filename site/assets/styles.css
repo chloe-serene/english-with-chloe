@@ -34,8 +34,6 @@
 
   --radius-card:16px;
   --radius-bubble:16px;
-  --shadow-card:none;
-  --shadow-pop:none;
   --wrap:72rem;
 }
 
@@ -125,7 +123,6 @@ section{padding-block:4rem}
 .brand:hover{text-decoration:none}
 .brand img{width:auto;height:2.7rem;display:block}
 @media(max-width:479px){.brand img{height:2.3rem}}
-.brand em{font-style:normal}
 .nav-links{display:none;gap:1.35rem;font-size:.94rem;font-weight:500}
 .nav-links a{color:var(--ink)}
 .nav-links a:hover{text-decoration:underline;text-underline-offset:4px}
@@ -162,15 +159,14 @@ section{padding-block:4rem}
   .hero .hero-chat{grid-row:4;margin-top:1.4rem}
   .hero .hero-menu{grid-row:5;width:100%;margin-top:.6rem;max-width:none}
 }
-@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;gap:4rem}.hero-chat{max-width:24rem}.meet{max-width:22rem}}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;gap:4rem}.hero .hero-chat{max-width:24rem}.hero .meet{max-width:21rem}}
 .hero h1{max-width:22ch}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;margin-top:1.9rem}
 .hero-chat{max-width:24.5rem;justify-self:center;width:100%}
-/* Hero portrait: clean Preply-style card until a plain-background photo arrives for the poster treatment */
+/* Hero photo: simple square, rounded corners */
 .meet{position:relative;margin:0 auto;width:100%;max-width:21rem}
-.meet-word{display:none}
-.meet-script{position:absolute;left:-.4rem;top:-.9rem;z-index:2;font-family:var(--font-display);font-weight:700;font-style:italic;font-size:1.35rem;line-height:1;color:#fff;background:var(--orange-ui);padding:.4rem .8rem;border-radius:999px;transform:rotate(-6deg)}
-.meet-photo{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:20px;display:block}
+.meet-word,.meet-script{display:none}
+.meet-photo{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%;border-radius:20px;display:block}
 @media(max-width:899px){.meet{max-width:17rem}}
 
 /* ---------- Result claim (owner copy) ---------- */
