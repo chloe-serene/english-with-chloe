@@ -293,11 +293,10 @@ section{padding-block:4rem}
 .price-card .amount{font-family:var(--font-display);font-weight:700;font-size:1.75rem;line-height:1.25;margin-top:.7rem;padding-top:.05em}
 .price-card .amount small{display:block;font-family:var(--font-body);font-weight:500;font-size:.85rem;color:var(--muted);margin-top:.15rem}
 .price-card--hot .amount small{color:var(--muted)}
-.price-card ul{list-style:none;margin:.9rem 0 0;padding:0;display:grid;gap:.4rem;font-size:.92rem}
+.price-card ul{list-style:none;margin:.9rem 0 1.3rem;padding:0;display:grid;gap:.4rem;font-size:.92rem}
 .price-card ul li{padding-left:1.25rem;position:relative}
 .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--teal-600);font-weight:700}
 .price-card--hot ul li::before{color:var(--teal-600)}
-.price-card ul{margin-bottom:1.3rem}
 .price-card .btn{margin-top:auto}
 .offer-rows{display:grid;gap:.8rem;margin-top:1.6rem}
 @media(min-width:768px){.offer-rows{grid-template-columns:1fr 1fr}}
