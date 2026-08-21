@@ -20,10 +20,11 @@ Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committe
 ## Before launch — replace placeholders (search `REPLACE_`)
 | Token | What |
 |---|---|
-| `REPLACE_ZALO` | Zalo link / phone (nav, hero, work, enquiry, sticky bar) |
-| `REPLACE_TIKTOK` / `REPLACE_FACEBOOK` / `REPLACE_INSTAGRAM` | Social URLs (footer) |
-| `REPLACE_FORMSPREE` | Formspree endpoint (enquiry form) |
+| `REPLACE_TIKTOK` | TikTok URL (footer) |
+| `REPLACE_FORMSPREE` | Formspree endpoint (enquiry form). Until set, submissions go NOWHERE (JS shows the error path pointing users to Zalo). |
 | og-image v2 | v1 (brand-only) ships at `assets/og-image.png`; swap in a photo version at launch |
+
+Live contacts (since 2026-08-18): Zalo CTAs use the owner's QR link `https://zaloapp.com/qr/p/1b4ahhjd1ysoh` — KNOWN ISSUE: this is QR plumbing (zalo:// scheme + App Store fallback) and fails on some phones; swap all 5 links to `https://zalo.me/<owner phone number>` once she provides the number. Instagram + Facebook are real.
 
 Placeholder links carry the `.draft` class (no visual effect now); remove it as each is finalized. Also remove the `noindex` meta at launch. Photos, logo and testimonials are real as of rev 9 (assets/chloe*.jpg, student-*.jpg, logo-*.png).
 
