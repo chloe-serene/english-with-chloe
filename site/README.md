@@ -17,16 +17,15 @@ Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committe
 `diff <(grep -o 'class="[^"]*"' index.html) <(grep -o 'class="[^"]*"' index.en.html)` → should be empty.
 (Known intentional exception: the `.on` class in the EN|VI language switcher sits on a different anchor per page.)
 
-## Before launch — replace placeholders (search `REPLACE_`)
-| Token | What |
-|---|---|
-| `REPLACE_TIKTOK` | TikTok URL (footer) |
-| `REPLACE_FORMSPREE` | Formspree endpoint (enquiry form). Until set, submissions go NOWHERE (JS shows the error path pointing users to Zalo). |
-| og-image v2 | v1 (brand-only) ships at `assets/og-image.png`; swap in a photo version at launch |
+## Contacts: ALL REAL as of 2026-08-21 (no `REPLACE_` tokens remain)
+Zalo = `https://zalo.me/0376427464` (5 CTAs per index file), form = Formspree `f/mrpzjoyy` (submissions land in the owner's Formspree dashboard + email), TikTok `@dailychatwchloe`, Instagram, Facebook. og-image is v2 with the owner's photo.
 
-Live contacts (since 2026-08-18): Zalo CTAs use the owner's QR link `https://zaloapp.com/qr/p/1b4ahhjd1ysoh` — KNOWN ISSUE: this is QR plumbing (zalo:// scheme + App Store fallback) and fails on some phones; swap all 5 links to `https://zalo.me/<owner phone number>` once she provides the number. Instagram + Facebook are real.
+## Remaining launch steps (blocked on domain purchase: dailychatwithchloe.com, confirmed available)
+1. Owner buys the domain in her Cloudflare account and attaches it to the worker.
+2. Swap staging host in all files: `git grep -n 'english-with-chloe.serenetravel-vietnam.workers.dev' -- site` (31 occurrences: canonicals, hreflang, OG, JSON-LD, robots.txt, sitemap.xml).
+3. Remove the 3 `noindex` metas (index.html, index.en.html, terms.html).
+4. Google Search Console: add property, submit sitemap, request indexing.
 
-Placeholder links carry the `.draft` class (no visual effect now); remove it as each is finalized. Also remove the `noindex` meta at launch. Photos, logo and testimonials are real as of rev 9 (assets/chloe*.jpg, student-*.jpg, logo-*.png).
 
 ## Local preview
 `cd site && python3 -m http.server 8787` → http://localhost:8787 (or the repo's `.claude/launch.json` "site" config).
