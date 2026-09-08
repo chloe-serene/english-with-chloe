@@ -3,7 +3,8 @@
   // Only ./site is uploaded; the private research/ folder (branch private-research) is never served.
   "name": "english-with-chloe",
   "compatibility_date": "2025-11-01",
-  "workers_dev": true,
+  "workers_dev": false,
+  "preview_urls": false,
   "routes": [
     { "pattern": "dailychatwithchloe.com", "custom_domain": true }
   ],
