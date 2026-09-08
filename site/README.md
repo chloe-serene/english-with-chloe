@@ -20,12 +20,10 @@ Hand-written CSS at `assets/styles.css` (no Tailwind, no build step — committe
 ## Contacts: ALL REAL as of 2026-08-21 (no `REPLACE_` tokens remain)
 Zalo = `https://zalo.me/0376427464` (5 CTAs per index file), form = Formspree `f/mrpzjoyy` (submissions land in the owner's Formspree dashboard + email), TikTok `@dailychatwchloe`, Instagram, Facebook. og-image is v2 with the owner's photo.
 
-## Remaining launch steps (blocked on domain purchase: dailychatwithchloe.com, confirmed available)
-1. Owner buys the domain in her Cloudflare account and attaches it to the worker.
-2. Swap staging host in all files: `git grep -n 'english-with-chloe.serenetravel-vietnam.workers.dev' -- site` (31 occurrences: canonicals, hreflang, OG, JSON-LD, robots.txt, sitemap.xml).
-3. Remove the 3 `noindex` metas (index.html, index.en.html, terms.html).
-4. Google Search Console: add property, submit sitemap, request indexing.
+## Domain + launch state (2026-09-08)
+Production domain **dailychatwithchloe.com** is attached to the `english-with-chloe` Worker as a Custom Domain (her Cloudflare account). `www` = proxied A 192.0.2.0 + Redirect Rule to apex. All canonical/hreflang/OG/JSON-LD/robots/sitemap URLs use the production domain. `workers_dev: true` is kept during transition; set to `false` after launch. GitHub Pages artifacts (root CNAME/index stubs) removed; the owner (repo admin) must also disable Pages in GitHub Settings.
 
+Remaining: 1) owner disables GitHub Pages; 2) launch switch = remove the 3 `noindex` metas (index.html, index.en.html, terms.html) on owner approval; 3) Google Search Console (Domain property, TXT in her DNS) + submit /sitemap.xml; 4) then `workers_dev: false`.
 
 ## Local preview
 `cd site && python3 -m http.server 8787` → http://localhost:8787 (or the repo's `.claude/launch.json` "site" config).

@@ -1,9 +1,12 @@
 {
-  // Cloudflare Workers static-assets deploy for the English with Chloe site.
-  // `npx wrangler deploy` serves the ./site folder as a static website.
-  // Only ./site is uploaded — the private research/ folder is never served.
-  "name": "daily-chat-with-chloe",
+  // Cloudflare Workers static-assets deploy for Daily Chat with Chloe.
+  // Only ./site is uploaded; the private research/ folder (branch private-research) is never served.
+  "name": "english-with-chloe",
   "compatibility_date": "2025-11-01",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "dailychatwithchloe.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./site"
   }

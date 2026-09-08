@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://english-with-chloe.serenetravel-vietnam.workers.dev/</loc>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/index.en"/>
+  <url><loc>https://dailychatwithchloe.com/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://dailychatwithchloe.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dailychatwithchloe.com/index.en"/>
   </url>
-  <url><loc>https://english-with-chloe.serenetravel-vietnam.workers.dev/index.en</loc>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://english-with-chloe.serenetravel-vietnam.workers.dev/index.en"/>
+  <url><loc>https://dailychatwithchloe.com/index.en</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://dailychatwithchloe.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dailychatwithchloe.com/index.en"/>
   </url>
-  <url><loc>https://english-with-chloe.serenetravel-vietnam.workers.dev/terms</loc></url>
+  <url><loc>https://dailychatwithchloe.com/terms</loc></url>
 </urlset>
